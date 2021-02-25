@@ -107,7 +107,9 @@ h1, h2, h3, h4, text, p {
   color: #ffb446; }
 
 .links-container {
+  font-size: 32px;
   margin-top: 40px;
+  font-style: italic;
   /*$colorLink: rgba(180, 180, 180, 1);*/ }
   .links-container a:link {
     color: #ffb446;
