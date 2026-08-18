@@ -1,0 +1,44 @@
+name: Update README previews
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-previews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install screenshot runtime
+        run: |
+          npm install --no-save playwright@1.62.1
+          npx playwright install --with-deps chromium
+
+      - name: Update README previews
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/update-readme-previews.mjs
+
+      - name: Commit changed previews
+        run: |
+          if git diff --quiet -- img/projects/OS1.jpg img/projects/OS2.jpg img/projects/OS3.jpg .github/readme-preview-state.json; then
+            echo "README previews are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/projects/OS1.jpg img/projects/OS2.jpg img/projects/OS3.jpg .github/readme-preview-state.json
+          git commit -m "Update README previews"
+          git push

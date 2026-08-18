@@ -1,0 +1,22 @@
+node_modules/
+.DS_Store
+**/.DS_Store
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Editor metadata
+.idea/
+.vscode/
+
+# Local browser-test output
+playwright-report/
+test-results/

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="赵唯淞课题组的研究项目，包括稀疏解卷积、SACD、RIED、SN2N、超分辨显微成像与生物医学图像分析。">
+    <meta name="robots" content="index, follow">
+  <meta name="author" content="Weisong Zhao (赵唯淞)">
+
+  <link rel="icon" href="../img/site/cover.jpg"/>
+  <title>项目 | 赵唯淞课题组</title>
+    <meta property="og:title" content="项目 | 赵唯淞课题组">
+<meta property="og:url" content="https://weisongzhao.github.io/zh/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:description" content="赵唯淞课题组的研究项目，包括稀疏解卷积、SACD、RIED、SN2N、超分辨显微成像与生物医学图像分析。">
+<meta property="og:image" content="https://weisongzhao.github.io/img/site/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="项目 | 赵唯淞课题组">
+<meta name="twitter:description" content="赵唯淞课题组的研究项目，包括稀疏解卷积、SACD、RIED、SN2N、超分辨显微成像与生物医学图像分析。">
+<meta name="twitter:image" content="https://weisongzhao.github.io/img/site/cover.jpg">
+
+  <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+
+    <link rel="canonical" href="https://weisongzhao.github.io/zh/projects.html">
+    <link rel="alternate" hreflang="en" href="https://weisongzhao.github.io/projects.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://weisongzhao.github.io/zh/projects.html">
+    <link rel="alternate" hreflang="x-default" href="https://weisongzhao.github.io/projects.html">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">首页</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="展开导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="team.html">团队</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">项目</a></li>
+        <li class="nav-item"><a class="nav-link" href="open-source.html">开源</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">论文</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">画廊</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">联系</a></li>
+        <li class="nav-item language-switcher" role="group" aria-label="语言">
+          <span class="nav-link language-link" lang="zh-CN" aria-current="page">中文</span>
+          <span class="language-divider" aria-hidden="true">/</span>
+          <a class="nav-link language-link" href="../projects.html" lang="en" hreflang="en">EN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">项目
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">首页</a>
+      </li>
+      <li class="breadcrumb-item active">项目</li>
+    </ol>
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="projects.html" aria-label="上一页">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">上一页</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="projects.html">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="projects-archive.html">2</a>
+      </li>
+<!--       <li class="page-item">
+        <a class="page-link" href="404.html">3</a>
+      </li> -->
+      <li class="page-item">
+        <a class="page-link" href="projects-archive.html" aria-label="下一页">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">下一页</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Project Two -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/l0 norm.png" alt="">
+        </a>
+      </div>
+      <div id="SparseDecon" class="col-md-5">
+        <h3>稀疏解卷积</h3>
+        <p><b>一种适用于荧光显微成像的通用后处理框架。</b>利用显微镜点扩散函数所诱导的稀疏性和连续性先验，我们开发了一种多约束解卷积算法；在低信噪比条件下，该算法可将分辨率提升至现有显微成像硬件物理极限的约两倍。该方法已在多种显微成像方式上完成测试：<br>1. 宽场显微成像；<br>2. TIRF显微成像；<br>3. 光片显微成像；<br>4. 共聚焦显微成像；<br>5. 多光子显微成像；<br>6. 结构光照明显微成像；<br>7. 基于涨落的超分辨显微成像；<br>8. 膨胀显微成像；<br>9. STED显微成像；<br>10. 用作单分子定位显微成像的预处理。<br>该方法适用于单层图像、时间序列和三维体数据。</p>       
+        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="open-source.html#Sparse-deconvolution">代码
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="gallery.html#SparseSTED">画廊
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="https://www.csr-biotech.com/cn/home" target="_blank" rel="noopener noreferrer">仪器
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div><hr>
+
+    <!-- Project Three -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#SACD">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/SACD.png" alt="">
+        </a>
+      </div>
+      <div id="SACD" class="col-md-5">
+        <h3>基于涨落的超分辨成像</h3>
+        <p>SACD（基于自相关与两步解卷积的超分辨方法）是一种更快速的荧光涨落超分辨重建方法，所需帧数减少约50倍。<br>1. SACD仅需20帧图像即可实现横向和轴向分辨率约两倍提升。<br>2. SACD无需额外光学器件，可为商用显微镜或自建系统灵活增加直接超分辨成像能力。<br>3. 稀疏解卷积辅助SACD（Sparse-SACD）可实现快速四维活细胞超分辨成像。</p>
+        <a class="btn btn-primary" href="https://doi.org/10.1038/s41566-023-01234-9">论文
+          <span class="glyphicon glyphicon-chevron-right"></span></a>        
+        <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.12.520072">预印本
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="open-source.html#SACD">代码
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="gallery.html#SACD">画廊
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="https://www.csr-biotech.com/cn/home" target="_blank" rel="noopener noreferrer">仪器
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Project Three -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#RIED">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/RIEDfig1.png" alt="">
+        </a>
+      </div>
+      <div id="RIED" class="col-md-5">
+        <h3>反应发光超分辨成像</h3>
+        <p>RIED是一种面向极端光子受限反应发光成像的超分辨重建框架，适用于电化学发光（ECL）和生物发光（BL）。<br>1. RIED通过解码反应产生发光信号的内在时空涨落，在无需外部光激发或光化学调制的条件下实现超分辨成像。<br>2. 在约1,000倍细胞ECL信号增强的支持下，ECL-RIED可实现无背景三维细胞内成像，横向/轴向分辨率约96 nm/235 nm，成像速度最高0.5 fps。<br>3. BL-RIED无需激发光、光毒性低，可连续进行超过两天的活细胞超分辨成像。</p>
+        <a class="btn btn-primary" href="https://www.nature.com/articles/s41586-026-10889-7">论文
+          <span class="glyphicon glyphicon-chevron-right"></span></a>        
+        <a class="btn btn-primary" href="https://www.biorxiv.org/content/10.64898/2026.02.04.703714v1">预印本
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="open-source.html#RIED">代码
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="gallery.html#RIED">画廊
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div>
+    <hr>
+
+              <div class="row">
+          <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/SN2Npro.jpg" alt="">
+          </a>
+        </div>
+        <div id="SN2N" class="col-md-5">
+          <h3>无监督学习降噪</h3>
+          <p>在活细胞超分辨（SR）显微成像中，每一个采集到的光子都十分宝贵。我们开发了一种数据高效的深度学习降噪方案，用于改善多种SR成像方式。该方法SN2N是一个自启发Noise2Noise模块，包含自监督数据生成和自约束学习过程。SN2N的性能可媲美监督学习方法，同时无需大规模训练集和干净真值，仅使用单帧噪声图像即可训练。我们证明，SN2N可将光子利用效率提高一至两个数量级，并兼容多种成像方式，可用于三维、多色和时间序列SR显微成像。我们还将SN2N集成到不同的SR重建算法中，有效减轻图像伪影。我们预期SN2N将改善活细胞SR成像并推动后续进展。</p>
+          <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="https://doi.org/10.1101/2024.01.23.576521">预印本
+            <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="btn btn-primary" href="open-source.html#SN2N">代码
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="btn btn-primary" href="gallery.html#SN2N">画廊
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+          <hr>
+
+    <div class="row">
+      <div class="col-md-7">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/Sparse-SIM.png" alt="">
+      </div>
+      <div id="SparseSIM" class="col-md-5">
+        <h3>超高速60 nm、564 Hz稀疏SIM</h3>
+        <p>稀疏解卷积辅助结构光照显微镜（Sparse-SIM）实现约60 nm空间分辨率和约2 ms时间分辨率（约564 Hz），可在活细胞中观察囊泡融合孔以及线粒体内外膜之间的相对运动等快速精细过程。</p>
+         <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="open-source.html#Sparse-deconvolution">代码
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="gallery.html#SparseSIM">画廊
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="https://www.csr-biotech.com/cn/home" target="_blank" rel="noopener noreferrer">仪器
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div><hr>
+
+
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-md-7">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/TOM203D.gif" alt="">
+        <!--               <object width="500" height="500" data="https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-021-01092-2/MediaObjects/41587_2021_1092_MOESM4_ESM.mp4"></object> -->
+      </div>
+      <div id="SparseSDSIM" class="col-md-5">
+        <h3>多色三维超分辨共聚焦显微成像</h3>
+        <p>稀疏解卷积辅助的转盘共聚焦超分辨显微方法（Sparse SD-SIM）可在较低光损伤条件下实现约90 nm横向分辨率，并支持三维、四色活细胞动态成像。</p>
+         <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="open-source.html#Sparse-deconvolution">代码
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="gallery.html#SparseSDSIM">画廊
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="https://www.csr-biotech.com/cn/home" target="_blank" rel="noopener noreferrer">仪器
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div><hr>
+
+    <!-- Project Three -->
+    <div class="row">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/PANEL.png" alt="">
+        </a>
+      </div>
+      <div id="PANEL" class="col-md-5">
+        <h3>局部图像质量定量评估</h3>
+        <p>PANEL（逐像素误差位置分析）是一套在超分辨尺度上定量绘制重建质量的框架，可评估传统方法和深度学习方法。rFRC：滚动傅里叶环相关（rFRC）用于定量绘制局部图像质量，包括有效分辨率和数据不确定性。较低的有效分辨率意味着更高的误差存在概率，因此可用来表示揭示误差分布的不确定性。PANEL：我们还将滤波后的rFRC与截断的RSM（分辨率尺度误差图）结合，形成完整的PANEL图；当宽场参考图像不可用时，可关闭RSM这一可选功能。PANEL为生物学研究人员提供简洁可视化，用于定性定位可靠性较低的区域。</p>
+        <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-023-01321-0">论文
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="open-source.html#PANEL">代码
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+          <a class="btn btn-primary" href="gallery.html#PANEL">画廊
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div>
+    <hr>
+
+            <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="https://ars.els-cdn.com/content/image/1-s2.0-S2095927323005595-ga1_lrg.jpg" alt="">
+          </a>
+        </div>
+        <div id="informatics" class="col-md-5">
+          <h3>基于成像的生物医学信息学</h3>
+          <p>通过升级成像平台并结合智能分析算法，我们实现稳健、高通量的生物图像表型分析。例如，利用活细胞中的SARS-CoV-2单病毒样颗粒（VLP）追踪和稀疏解卷积算法，我们发现VLP通过丝状伪足以“滑行”和“抓取”两种模式到达进入位点，从而避免病毒在细胞质膜上随机搜索。</p>
+          <a class="btn btn-primary" href="https://doi.org/10.1016/j.scib.2023.08.031">论文
+            <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="btn btn-primary" href="gallery.html#SparseSDSIM">画廊
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+          <hr>
+
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/endoscope.png" alt="">
+          </a>
+        </div>
+        <div id="endoscope" class="col-md-5">
+          <h3>单次曝光三维5 mm内窥探头</h3>
+          <p>我们采用精密加工的多微型成像器件（MIRD），设计了一种高柔性、紧凑、单次曝光、三维高分辨率内窥探头。为进一步保持柔性，直径和高度均为5 mm的MIRD采用柔性聚酰胺封装，并通过软质数据线传输数据。该探头的最佳横向分辨率为31 µm、轴向分辨率为255 µm，成像体积超过2.3 × 2.3 × 10 mm³。该技术可通过自然腔道方便地进入生物体内部，并已通过兔胃和直肠观察实验验证。</p>
+          <a class="btn btn-primary" href="https://doi.org/10.1364/OL.506261">论文
+            <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="btn btn-primary" href="gallery.html#endoscope">画廊
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+          <hr>
+
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/SOHA.png" alt="">
+          </a>
+        </div>
+        <div id="SOHA" class="col-md-5">
+          <h3>智能掌上型光流控血液分析仪</h3>
+          <p>我们设计了一种基于微型荧光显微镜和微流控平台的智能掌上型光流控血液分析仪，通过减轻设备质量提高便携性。该装置尺寸为35 × 30 × 80 mm、质量为39 g，不足商用流式细胞仪质量的5%。此外，通过集成图像处理与白细胞计数算法，实现了白细胞浓度自动检测。</p>
+          <a class="btn btn-primary" href="https://doi.org/10.29026/oes.2023.230018">论文
+            <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="btn btn-primary" href="gallery.html#SOHA">画廊
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+          <hr>
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="projects.html" aria-label="上一页">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">上一页</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="projects.html">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="projects-archive.html">2</a>
+      </li>
+<!--       <li class="page-item">
+        <a class="page-link" href="404.html">3</a>
+      </li> -->
+      <li class="page-item">
+        <a class="page-link" href="projects-archive.html" aria-label="下一页">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">下一页</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- /.container -->
+  <script src="../js/jquery-2.1.1.js"></script>
+  <script src="../js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+  <script src="../js/main.js"></script> <!-- Resource jQuery -->
+    <footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">版权所有 &copy; 赵唯淞 2019–2026</p>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

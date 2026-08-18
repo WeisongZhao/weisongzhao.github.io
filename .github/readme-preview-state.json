@@ -1,0 +1,23 @@
+{
+  "PANELJ": {
+    "repo": "WeisongZhao/PANELJ",
+    "readme_sha": "76b47293985163bdbab627dd3c14701c371fdd37",
+    "source_url": "https://github.com/WeisongZhao/PANELJ#readme",
+    "output": "img/projects/OS3.jpg",
+    "generated_at": "2026-08-18T18:31:42.968Z"
+  },
+  "Sparse-deconvolution": {
+    "repo": "SR-Wiki/Sparse-deconvolution",
+    "readme_sha": "e4bf085d8185aeeda319bc73f81163adcd2bee8f",
+    "source_url": "https://github.com/SR-Wiki/Sparse-deconvolution#readme",
+    "output": "img/projects/OS1.jpg",
+    "generated_at": "2026-08-18T18:53:38.165Z"
+  },
+  "SACDj": {
+    "repo": "WeisongZhao/SACDj",
+    "readme_sha": "506450b4daeb84ff774cb0d5f023245c5045ead2",
+    "source_url": "https://github.com/WeisongZhao/SACDj#readme",
+    "output": "img/projects/OS2.jpg",
+    "generated_at": "2026-08-18T18:53:43.220Z"
+  }
+}

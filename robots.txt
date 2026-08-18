@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /dist/
+Disallow: /src/
+Disallow: /tasks/
+
+Sitemap: https://weisongzhao.github.io/sitemap.xml
