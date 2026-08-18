@@ -608,7 +608,7 @@ def translate_contact(text)
   text.gsub!("<b>Room J714</b>, Technology Innovation Building (TIB), Harbin Institute of Technology, Harbin, China.",
              "<b>办公室地址：</b>J714室，哈尔滨工业大学科学园科技创新大厦(TIB)，哈尔滨市，黑龙江省，中国。")
   text.sub!(%r{<!-- Google Maps is used on the English page; the generator replaces it with Amap on the Chinese page\. -->\s*<iframe class="contact-map".*?</iframe>}m,
-            '<!-- 腾讯地图组件在第三方 iframe 中存在高 DPI 初始化异常；使用本地预览图保证稳定，点击后进入腾讯实时地图。 --><a class="contact-map contact-map-static" href="https://3gimg.qq.com/lightmap/v1/marker/index.html?marker=coord:45.728499,126.631383;title:%E5%93%88%E5%B0%94%E6%BB%A8%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E7%A7%91%E5%AD%A6%E5%9B%AD%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E5%A4%A7%E5%8E%A6;addr:%E5%93%88%E5%B0%94%E6%BB%A8%E5%B8%82,%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81,%E4%B8%AD%E5%9B%BD" target="_blank" rel="noopener noreferrer" aria-label="在腾讯地图中查看哈尔滨工业大学科学园科技创新大厦"><img src="../img/site/tencent-map-location.png" alt="腾讯地图上的哈尔滨工业大学科学园科技创新大厦位置"></a>')
+            '<!-- 中文页面使用腾讯地图轻量地点页展示指定地点。坐标采用 GCJ-02。 --><iframe class="contact-map" title="腾讯地图：哈尔滨工业大学科学园科技创新大厦" src="https://3gimg.qq.com/lightmap/v1/marker/index.html?marker=coord:45.728499,126.631383;title:%E5%93%88%E5%B0%94%E6%BB%A8%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E7%A7%91%E5%AD%A6%E5%9B%AD%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E5%A4%A7%E5%8E%A6;addr:%E5%93%88%E5%B0%94%E6%BB%A8%E5%B8%82,%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81,%E4%B8%AD%E5%9B%BD"></iframe>')
   text
 end
 
