@@ -109,7 +109,7 @@
       </div>
       <div id="SparseDecon" class="col-md-5">
         <h3>稀疏解卷积</h3>
-        <p><b>一种适用于荧光显微成像的通用后处理框架。</b>利用显微镜点扩散函数所诱导的稀疏性和连续性先验，我们开发了一种多约束解卷积算法；在低信噪比条件下，该算法可将分辨率提升至现有显微成像硬件物理极限的约两倍。该方法已在多种显微成像方式上完成测试：<br>1. 宽场显微成像；<br>2. TIRF显微成像；<br>3. 光片显微成像；<br>4. 共聚焦显微成像；<br>5. 多光子显微成像；<br>6. 结构光照明显微成像；<br>7. 基于涨落的超分辨显微成像；<br>8. 膨胀显微成像；<br>9. STED显微成像；<br>10. 用作单分子定位显微成像的预处理。<br>该方法适用于单层图像、时间序列和三维体数据。</p>       
+        <p><b>一种适用于荧光显微成像的通用后处理框架。</b>我们利用显微镜点扩散函数引入的稀疏性与连续性先验，开发了多约束解卷积算法；在低信噪比条件下，该算法可在现有显微成像硬件物理极限的基础上实现约两倍的分辨率提升。该方法已在多种显微成像模式中得到验证：<br>1. 宽场显微成像；<br>2. TIRF显微成像；<br>3. 光片显微成像；<br>4. 共聚焦显微成像；<br>5. 多光子显微成像；<br>6. 结构光照明显微成像；<br>7. 基于涨落的超分辨显微成像；<br>8. 膨胀显微成像；<br>9. STED显微成像；<br>10. 作为单分子定位显微成像的预处理方法。<br>该方法适用于单幅图像、时间序列和三维体数据。</p>
         <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="open-source.html#Sparse-deconvolution">代码
@@ -130,9 +130,9 @@
       </div>
       <div id="SACD" class="col-md-5">
         <h3>基于涨落的超分辨成像</h3>
-        <p>SACD（基于自相关与两步解卷积的超分辨方法）是一种更快速的荧光涨落超分辨重建方法，所需帧数减少约50倍。<br>1. SACD仅需20帧图像即可实现横向和轴向分辨率约两倍提升。<br>2. SACD无需额外光学器件，可为商用显微镜或自建系统灵活增加直接超分辨成像能力。<br>3. 稀疏解卷积辅助SACD（Sparse-SACD）可实现快速四维活细胞超分辨成像。</p>
+        <p>SACD(基于自相关与两步解卷积的超分辨方法)是一种更快速的荧光涨落超分辨重建方法，所需帧数减少约50倍。<br>1. SACD仅需20帧图像即可实现横向和轴向分辨率约两倍提升。<br>2. SACD无需额外光学器件，可为商用显微镜或自建系统灵活增加直接超分辨成像能力。<br>3. 稀疏解卷积辅助SACD(Sparse-SACD)可实现快速四维活细胞超分辨成像。</p>
         <a class="btn btn-primary" href="https://doi.org/10.1038/s41566-023-01234-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span></a>        
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
         <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.12.520072">预印本
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="open-source.html#SACD">代码
@@ -154,9 +154,9 @@
       </div>
       <div id="RIED" class="col-md-5">
         <h3>反应发光超分辨成像</h3>
-        <p>RIED是一种面向极端光子受限反应发光成像的超分辨重建框架，适用于电化学发光（ECL）和生物发光（BL）。<br>1. RIED通过解码反应产生发光信号的内在时空涨落，在无需外部光激发或光化学调制的条件下实现超分辨成像。<br>2. 在约1,000倍细胞ECL信号增强的支持下，ECL-RIED可实现无背景三维细胞内成像，横向/轴向分辨率约96 nm/235 nm，成像速度最高0.5 fps。<br>3. BL-RIED无需激发光、光毒性低，可连续进行超过两天的活细胞超分辨成像。</p>
+        <p>RIED是一种面向极端光子受限反应发光成像的超分辨重建框架，适用于电化学发光(ECL)和生物发光(BL)。<br>1. RIED通过解码反应产生发光信号的内在时空涨落，在无需外部光激发或光化学调制的条件下实现超分辨成像。<br>2. 在约1,000倍细胞ECL信号增强的支持下，ECL-RIED可实现无背景三维细胞内成像，横向/轴向分辨率约96 nm/235 nm，成像速度最高0.5 fps。<br>3. BL-RIED无需激发光、光毒性低，可连续进行超过两天的活细胞超分辨成像。</p>
         <a class="btn btn-primary" href="https://www.nature.com/articles/s41586-026-10889-7">论文
-          <span class="glyphicon glyphicon-chevron-right"></span></a>        
+          <span class="glyphicon glyphicon-chevron-right"></span></a>
         <a class="btn btn-primary" href="https://www.biorxiv.org/content/10.64898/2026.02.04.703714v1">预印本
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="open-source.html#RIED">代码
@@ -175,7 +175,7 @@
         </div>
         <div id="SN2N" class="col-md-5">
           <h3>无监督学习降噪</h3>
-          <p>在活细胞超分辨（SR）显微成像中，每一个采集到的光子都十分宝贵。我们开发了一种数据高效的深度学习降噪方案，用于改善多种SR成像方式。该方法SN2N是一个自启发Noise2Noise模块，包含自监督数据生成和自约束学习过程。SN2N的性能可媲美监督学习方法，同时无需大规模训练集和干净真值，仅使用单帧噪声图像即可训练。我们证明，SN2N可将光子利用效率提高一至两个数量级，并兼容多种成像方式，可用于三维、多色和时间序列SR显微成像。我们还将SN2N集成到不同的SR重建算法中，有效减轻图像伪影。我们预期SN2N将改善活细胞SR成像并推动后续进展。</p>
+          <p>在活细胞超分辨(SR)显微成像中，每一个采集到的光子都十分宝贵。我们开发了一种数据高效的深度学习降噪方法，可改善多种SR成像模式。SN2N采用自启发Noise2Noise框架，包含自监督数据生成和自约束学习两个过程；其性能可媲美监督学习方法，却无需大规模训练集或干净真值，仅凭单幅含噪图像即可训练。实验表明，SN2N可将光子利用效率提高一至两个数量级，并适用于三维、多色和时间序列SR显微成像。我们还将SN2N集成到多种SR重建算法中，以有效抑制图像伪影。我们期待SN2N进一步改善活细胞SR成像并推动相关研究。</p>
           <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="https://doi.org/10.1101/2024.01.23.576521">预印本
@@ -194,7 +194,7 @@
       </div>
       <div id="SparseSIM" class="col-md-5">
         <h3>超高速60 nm、564 Hz稀疏SIM</h3>
-        <p>稀疏解卷积辅助结构光照显微镜（Sparse-SIM）实现约60 nm空间分辨率和约2 ms时间分辨率（约564 Hz），可在活细胞中观察囊泡融合孔以及线粒体内外膜之间的相对运动等快速精细过程。</p>
+        <p>稀疏解卷积辅助结构光照显微镜(Sparse-SIM)实现约60 nm空间分辨率和约2 ms时间分辨率(约564 Hz)，可在活细胞中观察囊泡融合孔以及线粒体内外膜之间的相对运动等快速精细过程。</p>
          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="open-source.html#Sparse-deconvolution">代码
@@ -215,7 +215,7 @@
       </div>
       <div id="SparseSDSIM" class="col-md-5">
         <h3>多色三维超分辨共聚焦显微成像</h3>
-        <p>稀疏解卷积辅助的转盘共聚焦超分辨显微方法（Sparse SD-SIM）可在较低光损伤条件下实现约90 nm横向分辨率，并支持三维、四色活细胞动态成像。</p>
+        <p>稀疏解卷积辅助的转盘共聚焦超分辨显微方法(Sparse SD-SIM)可在较低光损伤条件下实现约90 nm横向分辨率，并支持三维、四色活细胞动态成像。</p>
          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="open-source.html#Sparse-deconvolution">代码
@@ -236,7 +236,7 @@
       </div>
       <div id="PANEL" class="col-md-5">
         <h3>局部图像质量定量评估</h3>
-        <p>PANEL（逐像素误差位置分析）是一套在超分辨尺度上定量绘制重建质量的框架，可评估传统方法和深度学习方法。rFRC：滚动傅里叶环相关（rFRC）用于定量绘制局部图像质量，包括有效分辨率和数据不确定性。较低的有效分辨率意味着更高的误差存在概率，因此可用来表示揭示误差分布的不确定性。PANEL：我们还将滤波后的rFRC与截断的RSM（分辨率尺度误差图）结合，形成完整的PANEL图；当宽场参考图像不可用时，可关闭RSM这一可选功能。PANEL为生物学研究人员提供简洁可视化，用于定性定位可靠性较低的区域。</p>
+        <p>PANEL(逐像素误差位置分析)是一套在超分辨尺度上定量绘制重建质量的框架，可用于评估传统方法和深度学习方法。rFRC(滚动傅里叶环相关)用于定量表征局部图像质量，包括有效分辨率和数据不确定性；有效分辨率越低，出现误差的概率越高，因此该指标可用于表征不确定性并揭示误差分布。PANEL进一步将滤波后的rFRC与截断的RSM(分辨率尺度误差图)结合，形成完整的误差定位图；没有宽场参考图像时，可关闭RSM这一可选功能。PANEL以简洁的可视化方式，帮助生物学研究人员直观定位可靠性较低的区域。</p>
         <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-023-01321-0">论文
           <span class="glyphicon glyphicon-chevron-right"></span></a>
           <a class="btn btn-primary" href="open-source.html#PANEL">代码
@@ -255,7 +255,7 @@
         </div>
         <div id="informatics" class="col-md-5">
           <h3>基于成像的生物医学信息学</h3>
-          <p>通过升级成像平台并结合智能分析算法，我们实现稳健、高通量的生物图像表型分析。例如，利用活细胞中的SARS-CoV-2单病毒样颗粒（VLP）追踪和稀疏解卷积算法，我们发现VLP通过丝状伪足以“滑行”和“抓取”两种模式到达进入位点，从而避免病毒在细胞质膜上随机搜索。</p>
+          <p>通过升级成像平台并结合智能分析算法，我们实现稳健、高通量的生物图像表型分析。例如，利用活细胞中的SARS-CoV-2单病毒样颗粒(VLP)追踪和稀疏解卷积算法，我们发现VLP通过丝状伪足以“滑行”和“抓取”两种模式到达进入位点，从而避免病毒在细胞质膜上随机搜索。</p>
           <a class="btn btn-primary" href="https://doi.org/10.1016/j.scib.2023.08.031">论文
             <span class="glyphicon glyphicon-chevron-right"></span></a>
             <a class="btn btn-primary" href="gallery.html#SparseSDSIM">画廊
@@ -272,7 +272,7 @@
         </div>
         <div id="endoscope" class="col-md-5">
           <h3>单次曝光三维5 mm内窥探头</h3>
-          <p>我们采用精密加工的多微型成像器件（MIRD），设计了一种高柔性、紧凑、单次曝光、三维高分辨率内窥探头。为进一步保持柔性，直径和高度均为5 mm的MIRD采用柔性聚酰胺封装，并通过软质数据线传输数据。该探头的最佳横向分辨率为31 µm、轴向分辨率为255 µm，成像体积超过2.3 × 2.3 × 10 mm³。该技术可通过自然腔道方便地进入生物体内部，并已通过兔胃和直肠观察实验验证。</p>
+          <p>我们采用精密加工的多微型成像器件(MIRD)，设计了一种高柔性、紧凑、单次曝光、三维高分辨率内窥探头。为进一步保持柔性，直径和高度均为5 mm的MIRD采用柔性聚酰胺封装，并通过软质数据线传输数据。该探头的最佳横向分辨率为31 µm、轴向分辨率为255 µm，成像体积超过2.3 × 2.3 × 10 mm³。该技术可通过自然腔道方便地进入生物体内部，并已通过兔胃和直肠观察实验验证。</p>
           <a class="btn btn-primary" href="https://doi.org/10.1364/OL.506261">论文
             <span class="glyphicon glyphicon-chevron-right"></span></a>
             <a class="btn btn-primary" href="gallery.html#endoscope">画廊
