@@ -69,10 +69,40 @@ body {
 }
 
 .contact-map {
+  display: block;
   flex: 1 1 auto;
   width: 100%;
-  min-height: 400px;
+  height: auto;
+  min-height: 0;
   border: 0;
+}
+
+.contact-map-static {
+  position: relative;
+  overflow: hidden;
+  background: #f1f3f5;
+}
+
+.contact-map-static::after {
+  content: "腾讯地图 · 点击查看实时地图 ↗";
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  background: rgba(255, 255, 255, 0.92);
+  color: #343a40;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.contact-map-static img {
+  display: block;
+  width: 100%;
+  /* The source preview is 900x600; its top 475px is the map canvas. */
+  height: 126.32%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* Horizontal social preview: stable even when the external platform is down. */
@@ -203,6 +233,10 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .contact-map-column {
+    aspect-ratio: 4 / 3;
+  }
+
   .language-switcher {
     margin-top: 0;
     margin-left: 0;
