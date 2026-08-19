@@ -47,8 +47,8 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="team.html">团队</a></li>
         <li class="nav-item"><a class="nav-link" href="projects.html">项目</a></li>
-        <li class="nav-item"><a class="nav-link" href="open-source.html">开源</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">论文</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">开源</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">画廊</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">联系</a></li>
         <li class="nav-item language-switcher" role="group" aria-label="语言">
@@ -80,7 +80,10 @@
 		<i>图片保留所有权利；如需使用，请联系<a href="contact.html">赵唯淞</a>。</i>
   </div>
   <hr>
-  <h3 id="RIED"><font color="#000000">RIED</font></h3>
+  <h3 id="RIED" class="gallery-project-title">RIED</h3>
+  <nav class="project-context-nav" aria-label="RIED项目链接">
+    <a href="projects.html#RIED">概览</a><a href="publications.html#RIED">论文</a><a href="resources.html#RIED">代码</a><a class="active" href="#RIED" aria-current="page">画廊</a>
+  </nav>
   <div class="row">
     <div class="col-md-8">
       <img class="img-fluid rounded mb-3 mb-md-0" src="../img/projects/RIEDfig1.png" alt="RIED超分辨成像">
@@ -89,20 +92,137 @@
       <br>
       <b>系统</b>:<br> 反应发光超分辨成像。
       <br>
-      <b>物镜</b>:<br> 100×油浸物镜(数值孔径(NA)=1.45，Olympus)。
-      <br>
       <b>相机</b>:<br> EMCCD相机(iXon Ultra 897，Andor)。
       <br>
-      <b>说明</b>:<br> RIED可在极端光子受限的电化学发光和生物发光条件下实现超分辨成像。
-      <br><br>
-      <a class="btn btn-primary" href="https://www.nature.com/articles/s41586-026-10889-7">论文
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
+      <b>说明</b>:<br> RIED将熵加权相关与解卷积相结合，无需外部光激发，即可重建分辨率约100 nm的ECL、CL和BL超分辨图像。
+      </div>
+  </div>
+  <h4 id="RIEDECL" class="gallery-comparison-heading"><span>RIED / ECL</span><small>常规ECL ↔ RIED重建</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="../img/gallery/RIED-ECL.png" alt="RIED电化学发光重建结果">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="../img/gallery/ECL.png" alt="常规电化学发光图像">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
     </div>
+    <div class="col-md-5">
+      <br>
+      <b>系统</b>:<br> 电化学发光超分辨成像(ECL-RIED)。
+      <br><b>物镜</b>:<br> 100×油浸物镜(NA = 1.45，Olympus)。
+      <br><b>相机</b>:<br> EMCCD相机(iXon Ultra 897，Andor)。
+      <br><b>样品</b>:<br> HeLa细胞微管。
+      <br><b>标记</b>:<br> α-tubulin免疫标记，并使用Ru(bpy)<sub>3</sub><sup>2+</sup>偶联抗体。
+      <br><b>说明</b>:<br> 左：常规ECL；右：ECL-RIED，分辨率达到97 nm。
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / CL</span><small>常规CL ↔ RIED重建</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="../img/gallery/RIED-CL.png" alt="RIED化学发光重建结果">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="../img/gallery/CL.png" alt="常规化学发光图像">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>系统</b>:<br> 化学发光超分辨成像(CL-RIED)。
+      <br><b>物镜</b>:<br> 100×油浸物镜(NA = 1.45，Olympus)。
+      <br><b>相机</b>:<br> EMCCD相机(iXon Ultra 897，Andor)。
+      <br><b>样品</b>:<br> 固定COS-7细胞中的线粒体。
+      <br><b>标记</b>:<br> 线粒体靶向GeNL(NanoLuc–mNeonGreen BRET探针)。
+      <br><b>说明</b>:<br> 左：常规CL；右：CL-RIED。三维线粒体成像的横向和轴向分辨率分别达到102 nm和221 nm。
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / BL</span><small>常规BL ↔ RIED重建</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="../img/gallery/RIED-BL.png" alt="RIED生物发光重建结果">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="../img/gallery/BL.png" alt="常规生物发光图像">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>系统</b>:<br> 生物发光超分辨成像(BL-RIED)。
+      <br><b>物镜</b>:<br> 油浸物镜(100×/1.42 NA或60×/1.49 NA，Nikon)。
+      <br><b>相机</b>:<br> EMCCD相机(iXon Ultra 897，Andor)。
+      <br><b>样品</b>:<br> 活COS-7细胞中的线粒体外膜。
+      <br><b>标记</b>:<br> 线粒体外膜靶向GeNL(NanoLuc–mNeonGreen BRET探针)。
+      <br><b>说明</b>:<br> 左：常规BL；右：BL-RIED。分辨率达到117 nm，并支持41小时连续活细胞成像。
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / 2D ECL</span><small>常规二维ECL ↔ RIED重建</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="../img/gallery/2D RIED-ECL.png" alt="二维RIED-ECL重建结果">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="../img/gallery/2dECL.png" alt="常规二维ECL图像">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>系统</b>:<br> 二维ECL-RIED。
+      <br><b>物镜</b>:<br> 100×油浸物镜(NA = 1.45，Olympus)。
+      <br><b>相机</b>:<br> EMCCD相机(iXon Ultra 897，Andor)。
+      <br><b>样品</b>:<br> HeLa细胞微管。
+      <br><b>标记</b>:<br> α-tubulin免疫标记，并使用Ru(bpy)<sub>3</sub><sup>2+</sup>偶联抗体。
+      <br><b>说明</b>:<br> 左：常规二维ECL；右：二维ECL-RIED，显著增强结构细节。
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / 3D ECL</span><small>常规三维ECL ↔ RIED重建</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="../img/gallery/3D RIED-ECL.png" alt="三维RIED-ECL重建结果">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="../img/gallery/3D-ECL.png" alt="常规三维ECL图像">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>系统</b>:<br> 三维ECL-RIED。
+      <br><b>物镜</b>:<br> 100×油浸物镜(NA = 1.45，Olympus)。
+      <br><b>相机</b>:<br> EMCCD相机(iXon Ultra 897，Andor)。
+      <br><b>样品</b>:<br> HeLa细胞微管。
+      <br><b>标记</b>:<br> α-tubulin免疫标记，并使用Ru(bpy)<sub>3</sub><sup>2+</sup>偶联抗体。
+      <br><b>颜色编码</b>:<br> 颜色表示轴向深度，用于区分不同z位置的结构。
+      <br><b>说明</b>:<br> 左：常规三维ECL；右：三维ECL-RIED，可分辨约116 nm横向间距和235 nm轴向间距。
+      </div>
   </div>
   <hr>
-  <h3 id="SN2N" ><font color="#000000">SN2N</font></h3>
-    <h4 id="SN2NSDSIM" align="right"><font color="#000000">SD-SIM</font></h4><hr>
+  <h3 id="SN2N" class="gallery-project-title">SN2N</h3>
+  <nav class="project-context-nav" aria-label="SN2N项目链接">
+    <a href="projects.html#SN2N">概览</a><a href="publications.html#SN2N">论文</a><a href="resources.html#SN2N">代码</a><a class="active" href="#SN2N" aria-current="page">画廊</a>
+  </nav>
+    <h4 id="SN2NSDSIM" class="gallery-comparison-heading"><span>SN2N / SD-SIM</span><small>含噪采集 ↔ SN2N降噪</small></h4><hr>
     <div class="row">
       <div class="col-md-10">
          <img src="../img/gallery/SN2Ngallery.gif" alt="SN2N显微图像降噪对比">
@@ -118,11 +238,7 @@
         <b>细胞系</b>:<br> COS-7细胞。
         <br>
         <b>说明</b>:<br> 在SD-SIM图像上应用RL-SN2N。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -140,11 +256,7 @@
         <b>细胞系</b>:<br> COS-7细胞。
         <br>
         <b>说明</b>:<br> 在SD-SIM图像上应用三维RL-SN2N。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -162,11 +274,7 @@
         <b>细胞系</b>:<br> COS-7细胞。
         <br>
         <b>说明</b>:<br> 在SD-SIM图像上应用三维RL-SN2N。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -184,11 +292,7 @@
         <b>细胞系</b>:<br> COS-7细胞。
         <br>
         <b>说明</b>:<br> 在SD-SIM图像上应用三维RL-SN2N。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -206,14 +310,10 @@
         <b>细胞系</b>:<br> COS-7细胞。
         <br>
         <b>说明</b>:<br> 在SD-SIM图像上应用RL-SN2N。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 id="SN2NSTED" align="right"><font color="#000000">STED</font></h4><hr>
+    <h4 id="SN2NSTED" class="gallery-comparison-heading"><span>SN2N / STED</span><small>含噪采集 ↔ SN2N降噪</small></h4><hr>
     <div class="row">
       <div class="col-md-10">
          <img src="../img/gallery/STEDSN2N.gif" alt="STED显微图像SN2N降噪">
@@ -226,14 +326,10 @@
         <b>细胞系</b>:<br> COS-7细胞。
         <br>
         <b>说明</b>:<br> 在STED图像上应用SN2N。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 id="SN2NGISIM" align="right"><font color="#000000">GI-SIM</font></h4><hr>
+    <h4 id="SN2NGISIM" class="gallery-comparison-heading"><span>SN2N / GI-SIM</span><small>含噪采集 ↔ SN2N降噪</small></h4><hr>
     <div class="row">
       <div class="col-md-10">
          <img src="../img/gallery/GISIM-SN2N.gif" alt="GI-SIM显微图像SN2N降噪">
@@ -243,14 +339,10 @@
         <b>系统</b>:<br> GI-SIM.
         <br>
         <b>说明</b>:<br> 在SIM图像上应用SN2N(<a href="https://figshare.com/articles/dataset/BioSR/13264793">BioSR</a>数据集)。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 id="SN2NSIM" align="right"><font color="#000000">2D-SIM</font></h4><hr>
+    <h4 id="SN2NSIM" class="gallery-comparison-heading"><span>SN2N / 2D-SIM</span><small>含噪采集 ↔ SN2N降噪</small></h4><hr>
     <div class="row">
       <div class="col-md-7">
          <img src="../img/gallery/2DSIM-SN2N.gif" alt="2D-SIM显微图像SN2N降噪">
@@ -265,16 +357,15 @@
         <b>相机</b>:<br> sCMOS相机 (C14440-20UP, Hamamatsu, Japan).
         <br>
         <b>说明</b>:<br> 在SIM图像上应用SN2N。
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
 
-    <h3 id="Sparse"><font color="#000000">稀疏解卷积辅助显微成像</font></h3>
-    <h4 id="SparseSDSIM" align="right"><font color="#000000">SD-SIM</font></h4><hr>
+    <h3 id="Sparse" class="gallery-project-title">稀疏解卷积辅助显微成像</h3>
+    <nav class="project-context-nav" aria-label="稀疏解卷积项目链接">
+      <a href="projects.html#SparseDecon">概览</a><a href="publications.html#Sparse">论文</a><a href="resources.html#Sparse-deconvolution">代码</a><a class="active" href="#Sparse" aria-current="page">画廊</a>
+    </nav>
+    <h4 id="SparseSDSIM" class="gallery-comparison-heading"><span>稀疏解卷积 / SD-SIM</span><small>原始采集 ↔ 稀疏重建</small></h4><hr>
     <div class="row">
       <div class="col-md-7">
         <figure class="cd-image-container">
@@ -304,11 +395,7 @@
         &emsp;&emsp;Tubulin-EGFP.
         <br>
         <b>说明</b>:<br> 左：原始SD-SIM；右：Sparse SD-SIM。
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -327,14 +414,10 @@
         <br>
         <b>标记</b>:<br>
         &emsp;&emsp;Tom20-mCherry;<br>
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 align="right"><font color="#000000">4.5倍膨胀显微成像</font></h4><hr>
+    <h4 class="gallery-comparison-heading"><span>稀疏解卷积 / 4.5倍膨胀显微成像</span><small>原始膨胀图像 ↔ 稀疏重建</small></h4><hr>
     <div class="row">
       <div class="col-md-7">
         <figure class="cd-image-container">
@@ -361,13 +444,7 @@
         &emsp;&emsp;Sec61β-GFP.
         <br>
         <b>说明</b>:<br> 左：原始膨胀显微图像；右：稀疏解卷积增强的膨胀显微图像。
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a> <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-020-01005-2/">系统论文
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -396,15 +473,10 @@
         &emsp;&emsp;α-微管蛋白免疫染色。
         <br>
         <b>说明</b>:<br> 左：原始膨胀显微图像；右：稀疏解卷积增强的膨胀显微图像。
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-          <span class="glyphicon glyphicon-chevron-right"></span></a> <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-020-01005-2/">系统论文
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
         </div>
       </div>
       <hr>
-      <h4 id="SparseSIM" align="right"><font color="#000000">2D-SIM</font></h4>
+      <h4 id="SparseSIM" class="gallery-comparison-heading"><span>稀疏解卷积 / 2D-SIM</span><small>原始SIM ↔ 稀疏重建</small></h4>
       <hr>
 
 <!--       <div class="row">
@@ -412,12 +484,7 @@
           <video src="https://static-content.springer.com/esm/art%3A10.1038%250"></video>
         </div>
         <div class="col-md-5">
-        Ring-shaped Nup98 pores resolved by Sparse-SIM 2×. Nuclear pores labeled with Nup98–GFP in a live COS-7 cell with 4-s intervals imaged by 2D-SIM, 2D-SIM followed by RL deconvolution and Sparse-SIM 2× (cf., Fig. 2c) demonstrate that only Sparse-SIM 2× can resolve the ring-shaped Nup98.<br><br>
-          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-            <span class="glyphicon glyphicon-chevron-right"></span></a> <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">系统论文
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div>
+        Ring-shaped Nup98 pores resolved by Sparse-SIM 2×. Nuclear pores labeled with Nup98–GFP in a live COS-7 cell with 4-s intervals imaged by 2D-SIM, 2D-SIM followed by RL deconvolution and Sparse-SIM 2× (cf., Fig. 2c) demonstrate that only Sparse-SIM 2× can resolve the ring-shaped Nup98.</div>
         </div>
       <hr> -->
 
@@ -447,11 +514,6 @@
           &emsp;&emsp;LAMP1-EGFP.
           <br>
           <b>说明</b>:<br> 左：原始2D-SIM；右：Sparse 2D-SIM。
-          <br><br>
-          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-            <span class="glyphicon glyphicon-chevron-right"></span></a> <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">系统论文
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
           </div>
         </div>
         <hr>
@@ -481,12 +543,6 @@
             &emsp;&emsp;LipidSpot 488.
             <br>
             <b>说明</b>:<br> 左：原始2D-SIM；右：Sparse 2D-SIM。
-            <br><br>
-            <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-              <span class="glyphicon glyphicon-chevron-right"></span></a>
-              <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">系统论文
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
             </div>
           </div>
           <hr>
@@ -516,16 +572,10 @@
               &emsp;&emsp;LysoView 488.
               <br>
               <b>说明</b>:<br> 左：原始2D-SIM；右：Sparse 2D-SIM。
-              <br><br>
-              <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-                <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">系统论文
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
               </div>
             </div>
             <hr>
-            <h4  id = "SparseTSIM" align="right"><font color="#000000">TIRF-SIM</font></h4>
+            <h4 id="SparseTSIM" class="gallery-comparison-heading"><span>稀疏解卷积 / TIRF-SIM</span><small>原始SIM ↔ 稀疏重建</small></h4>
             <hr>
             <div class="row">
               <div class="col-md-7">
@@ -553,16 +603,10 @@
                 &emsp;&emsp;Cy5, 两个位点经荧光标记。
                 <br>
                 <b>说明</b>:<br> 左：原始2D-SIM；右：Sparse 2D-SIM。
-                <br><br>
-                <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-                  <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">系统论文
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
                 </div>
               </div>
               <hr>
-            <h4 id="SparseSTED" align="right"><font color="#000000">Gated STED</font></h4><hr>
+            <h4 id="SparseSTED" class="gallery-comparison-heading"><span>稀疏解卷积 / 门控STED</span><small>原始STED ↔ 稀疏重建</small></h4><hr>
               <div class="row">
                 <div class="col-md-6">
                   <figure class="cd-image-container">
@@ -588,11 +632,7 @@
                   &emsp;&emsp;anti-Tubulin;
                   <br>
                   <b>说明</b>:<br> 左：原始STED；右：稀疏解卷积增强的STED。
-                  <br><br>
-                  <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
+                  </div>
               </div>
               <hr>
               <div class="row">
@@ -619,14 +659,10 @@
                   &emsp;&emsp;anti-Mab414;
                   <br>
                   <b>说明</b>:<br> 左：原始STED；右：稀疏解卷积增强的STED。
-                  <br><br>
-                  <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
+                  </div>
               </div>
               <hr>
-              <h4 align="right"><font color="#000000">MTPM</font></h4><hr>
+              <h4 class="gallery-comparison-heading"><span>稀疏解卷积 / MTPM</span><small>原始多光子图像 ↔ 稀疏重建</small></h4><hr>
               <div class="row">
                 <div class="col-md-6">
                   <figure class="cd-image-container">
@@ -651,16 +687,10 @@
                   &emsp;&emsp;Thy1-GFP
                   <br>
                   <b>说明</b>:<br> 左：原始MTPM；右：稀疏解卷积增强的MTPM。<br> 颜色编码的三维体数据(50～160 μm)。
-                  <br><br>
-                  <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">论文
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                    <a class="btn btn-primary" href="https://www.nature.com/articles/nmeth.4305/">系统论文
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
                   </div>
                 </div>
                 <hr>
-                <h3 id="sposi"><font color="#000000">SPoSI</font></h3>
+                <h3 id="sposi" class="gallery-project-title">SPoSI</h3>
 
                 <div class="row">
                   <div class="col-md-6">
@@ -683,14 +713,13 @@
                     <b>样品</b>:<br>金纳米棒(20 nm × 300 nm)。
                     <br>
                     <b>说明</b>:<br> 左：原始宽场图像(552 nm激光)；右：SPoSI。
-                    <br><br>
-                    <a class="btn btn-primary" href="404.html">论文
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div><hr>
 
-                <h3 id="endoscope"><font color="#000000">内窥镜</font></h3>
+                <h3 id="endoscope" class="gallery-project-title">内窥镜</h3>
+                <nav class="project-context-nav" aria-label="内窥镜项目链接">
+                  <a href="projects.html#endoscope">概览</a><a href="publications.html#endoscope">论文</a><a class="active" href="#endoscope" aria-current="page">画廊</a>
+                </nav>
                 <div class="row">
                   <div class="col-md-6">
                     <figure class="cd-image-container">
@@ -712,14 +741,13 @@
                     <b>样品</b>:<br>USAF分辨率靶与活体蠕虫。
                     <br>
                     <b>说明</b>:<br> 左：活体蠕虫三维图像；右：倾斜的USAF分辨率靶。
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.1364/OL.506261">论文
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div><hr>
 
-                  <h3 id="SOHA"><font color="#000000">智能掌上型光流控血液分析仪</font></h3>
+                  <h3 id="SOHA" class="gallery-project-title">智能掌上型光流控血液分析仪</h3>
+                  <nav class="project-context-nav" aria-label="血液分析仪项目链接">
+                    <a href="projects.html#SOHA">概览</a><a href="publications.html#SOHA">论文</a><a class="active" href="#SOHA" aria-current="page">画廊</a>
+                  </nav>
                 <div class="row">
                   <div class="col-md-6">
                     <img src="../img/gallery/OES_GIF.gif" alt="智能掌上型光流控血液分析仪">
@@ -733,14 +761,14 @@
                     <b>样品</b>:<br>白细胞。
                     <br>
                     <b>说明</b>:<br> 白细胞追踪。
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.29026/oes.2023.230018">论文
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div><hr>
 
-                <h3 id="SACD"><font color="#000000">SACD</font></h3>
+                <h3 id="SACD" class="gallery-project-title">SACD</h3>
+                <nav class="project-context-nav" aria-label="SACD项目链接">
+                  <a href="projects.html#SACD">概览</a><a href="publications.html#SACD">论文</a><a href="resources.html#SACD">代码</a><a class="active" href="#SACD" aria-current="page">画廊</a>
+                </nav>
+                <h4 class="gallery-comparison-heading"><span>SACD / 转盘共聚焦</span><small>共聚焦重建 ↔ SACD</small></h4>
                 <div class="row">
                   <div class="col-md-9">
                     <figure class="cd-image-container">
@@ -768,11 +796,7 @@
                     <br>
                     <b>说明</b>:<br> 左：共聚焦图像；右：SACD。
                     <br>大视场三维体数据(深度10 μm)；<br> 每次SACD重建使用20帧图像。
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.12.520072">查看预印本
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
@@ -792,13 +816,13 @@
                     <b>标记</b>:<br>
                     &emsp;&emsp;Qdots 525.
                     <br> 每次SACD重建使用20帧图像。
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.12.520072">查看预印本
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
-            <hr><h3 id="PANEL"><font color="#000000">PANEL</font></h3>
+            <hr><h3 id="PANEL" class="gallery-project-title">PANEL</h3>
+                <nav class="project-context-nav" aria-label="PANEL项目链接">
+                  <a href="projects.html#PANEL">概览</a><a href="publications.html#PANEL">论文</a><a href="resources.html#PANEL">代码</a><a class="active" href="#PANEL" aria-current="page">画廊</a>
+                </nav>
+                <h4 class="gallery-comparison-heading"><span>PANEL / STORM</span><small>STORM重建 ↔ 局部分辨率图</small></h4>
                 <div class="row">
                   <div class="col-md-8">
                     <figure class="cd-image-container">
@@ -823,11 +847,7 @@
                     <b>标记</b>:<br>使用Alexa Fluor 647标记的α-微管蛋白。
                     <br>
                     <b>说明</b>:<br> 左：STORM；右：rFRC分辨率图。
-                    <br><br>
-                    <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-023-01321-0">论文
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
@@ -847,13 +867,9 @@
                     <b>标记</b>:<br>使用Alexa Fluor 647标记的α-微管蛋白。
                     <br>
                     <b>说明</b>:<br> 左：STORM；右：rFRC分辨率图。
-                    <br><br>
-                    <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-023-01321-0">论文
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
-                <hr><h3 id="MGAN-SIM"><font color="#000000">MGAN-SIM</font></h3>
+                <hr><h3 id="MGAN-SIM" class="gallery-project-title">MGAN-SIM</h3>
 
                 <div class="row">
                   <div class="col-md-9">
@@ -881,10 +897,7 @@
                     &emsp;&emsp;MitoTracker Green.
                     <br>
                     <b>说明</b>:<br> 左：宽场图像；右：MGAN-SIM。
-                    <br><br>
-                    <a class="btn btn-primary" href="404.html">论文
-                      <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  </div>
+                    </div>
                 </div>
                 <hr>
 
@@ -917,15 +930,12 @@
                       <br>
                       <b>说明</b>:<br> 左：TIRF；右：MGAN-SIM。<br>
                       持续1小时的长时程成像，共3400帧。 <br><br>
-                      <a class="btn btn-primary" href="404.html">论文
-                      <span class="glyphicon glyphicon-chevron-right"></span></a>
-<!--                     <div class="card-footer">
-                      <p align="center"><a href="404.html"  class="btn btn-primary">论文</a></p>
-                    </div>    -->
+                      
+<!--                         -->
                 </div>
               </div>
 
-              <hr><h3><font color="#000000">ODT</font></h3>
+              <hr><h3 id="ODT" class="gallery-project-title">ODT</h3>
               <div class="row">
                 <div class="col-md-6">
                   <img src="../img/gallery/ODT1.gif" alt="ODT">
@@ -941,13 +951,9 @@
                   <b>细胞系</b>:<br> COS-7细胞。
                   <br>
                   <b>说明</b>:<br> 数小时尺度的细胞分裂过程。<br> 左侧显示0～10 μm深度范围及7 μm处的平面。 <br><b>数据由陈良怡教授提供。</b>
-                  <br><br>
-                  <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-020-0249-4/">论文
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
+                  </div>
               </div>
-              <hr><h3><font color="#000000">SIM-assisted ODT</font></h3>
+              <hr><h3 id="SIM-assisted-ODT" class="gallery-project-title">SIM辅助ODT</h3>
 
               <div class="row">
                 <div class="col-md-6">
@@ -984,14 +990,12 @@
                     <br>
                     <b>说明</b>:<br> 左图组：5 μm平面的ODT图像(总深度0～6 μm，左)与2D-SIM图像(右)。<br>右图组：2D-SIM(红色)与ODT(灰色)的合并图像。 <br><b>数据由陈良怡教授提供。</b>
                   </p>
-                  <div class="card-footer">
-                    <p align="center"><a href="https://www.nature.com/articles/s41377-020-0249-4/" class="btn btn-primary">论文</a></p>
-                  </div>
+                  
                 </div>
               </div>
 
 
-              <hr><h3 id="MLFM"><font color="#000000">微型化光场显微成像</font></h3>
+              <hr><h3 id="MLFM" class="gallery-project-title">微型化光场显微成像</h3>
 
               <div class="row">
                 <div class="col-md-7">
@@ -1020,7 +1024,7 @@
                     <b>说明</b>: 数据由<b>郭长亮</b>提供。
                   </p>
                   <div>
-                    <p align="center"><a href="https://doi.org/10.1101/2021.11.21.469394"  class="btn btn-primary">论文</a></p>
+                    
                   </div>
                 </div>
               </div>

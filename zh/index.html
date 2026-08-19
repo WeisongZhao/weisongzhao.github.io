@@ -37,6 +37,8 @@
       "name": "Weisong Zhao",
       "alternateName": "赵唯淞",
       "url": "https://weisongzhao.github.io/",
+      "email": "mailto:weisongzhao@hit.edu.cn",
+      "image": "https://weisongzhao.github.io/img/team/me.jpg",
       "jobTitle": "Tenured Professor",
       "affiliation": {
         "@type": "CollegeOrUniversity",
@@ -45,8 +47,11 @@
       "sameAs": [
         "https://homepage.hit.edu.cn/weisongzhao",
         "https://github.com/WeisongZhao",
+        "https://github.com/SR-Wiki",
         "https://x.com/weisong_zhao",
-        "https://bsky.app/profile/weisong-zhao.bsky.social"
+        "https://bsky.app/profile/weisong-zhao.bsky.social",
+        "https://orcid.org/0000-0002-5969-1956",
+        "https://scholar.google.com/citations?user=8FzeX8sAAAAJ&hl=en"
       ]
     },
     {
@@ -73,6 +78,7 @@
   ]
 }
 </script>
+  <link href="../css/home-redesign-preview.css" rel="stylesheet">
 </head>
 
 <body>
@@ -86,8 +92,8 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="team.html">团队</a></li>
         <li class="nav-item"><a class="nav-link" href="projects.html">项目</a></li>
-        <li class="nav-item"><a class="nav-link" href="open-source.html">开源</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">论文</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">开源</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">画廊</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">联系</a></li>
         <li class="nav-item language-switcher" role="group" aria-label="语言">
@@ -260,133 +266,117 @@
             </a>
         </div>
     </header>
+<main class="home-preview">
+  <section class="preview-section" aria-labelledby="research-heading">
+  <div class="container">
+    <div class="preview-section-heading">
+      <div>
+        <h1 id="research-heading">研究</h1>
+        <p>课题组围绕生物医学成像开展研究，涵盖成像物理、系统设计、计算重建、机器学习、定量生物图像分析与紧凑型生物医学装置。</p>
+      </div>
+      <a class="preview-section-link" href="projects.html">查看项目 <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="preview-research-grid">
+      <article class="preview-research-card">
+        <figure class="preview-research-media"><img src="../img/home/cell bio objective.png" alt="Microscopy systems and algorithms"></figure>
+        <div class="preview-research-body">
+          <h3>显微成像：系统与算法</h3>
+          <p>面向不同成像场景，融合新型成像物理、自底向上的系统设计以及硬件与算法协同设计，发展先进生物医学成像技术。</p>
+          <details class="preview-card-details"><summary>展开详情</summary><div class="preview-card-details-body">
+            <p>我们面向多种成像模态发展先进生物医学成像技术，研究涵盖新型成像物理、自底向上的系统设计，以及针对具体成像场景的硬件与计算算法协同设计。在光子或信号预算、采集速度、成像深度和系统复杂度等实际约束下，优化空间、时间与信息分辨率。</p>
+            <h4>代表性技术</h4>
+            <details class="preview-technique"><summary>稀疏解卷积</summary><div><p>一种物理信息驱动的重建框架，利用稀疏性与结构连续性提升分辨率、对比度和信噪比，尤其适用于低信噪比成像；相关应用包括<a href="projects.html#SparseSIM">Sparse-SIM</a>和<a href="projects.html#SparseSDSIM">Sparse SD-SIM</a>。</p><a href="projects.html#SparseDecon">稀疏解卷积项目 →</a></div></details>
+            <details class="preview-technique"><summary>SACD</summary><div><p>一种基于涨落的超分辨框架，无需额外光学组件，仅使用20帧即可实现约三倍的横向和轴向分辨率提升；Sparse-SACD进一步支持快速四维活细胞超分辨成像。</p><p class="project-see-also"><strong>另见</strong>我们的无标记SACD工作<a href="https://www.nature.com/articles/s41377-025-01914-x">[Light: Science &amp; Applications, 2025]</a>。</p><a href="projects.html#SACD">SACD项目 →</a></div></details>
+            <details class="preview-technique"><summary>RIED</summary><div><p>一种面向极端光子受限生物发光和电化学发光的反应发光超分辨框架，无需外部光学激发或光化学调制即可实现高对比度二维和三维成像；BL-RIED可连续超分辨成像两天以上。</p><a href="projects.html#RIED">RIED项目 →</a></div></details>
+          </div></details>
+        </div>
+      </article>
+      <article class="preview-research-card">
+        <figure class="preview-research-media"><img src="../img/home/NN-w.png" alt="Machine learning methods and applications"></figure>
+        <div class="preview-research-body">
+          <h3>机器学习：方法与应用</h3>
+          <p>融合显式物理先验、结构先验与数据驱动学习，开展多维生物医学及自然信号的重建与分析。</p>
+          <details class="preview-card-details"><summary>展开详情</summary><div class="preview-card-details-body">
+            <p>我们研究多维生物医学及自然信号的机器学习重建与分析方法，利用显式物理和结构先验设计可解释计算模型，并借助数据驱动先验解决传统方法难以处理的问题。相关应用涵盖降低显微成像的光子、采集时间与硬件需求，以及加速生物图像重建、分析和发现。</p>
+            <h4>代表性技术</h4>
+            <details class="preview-technique"><summary>SN2N</summary><div><p>Self-inspired Noise2Noise是一种自监督学习降噪框架，无需大规模配对数据集或干净真值图像，性能可媲美监督学习，并支持稳健、光子高效、长时程和低光毒性成像。</p><p class="project-see-also"><strong>另见</strong>自适应SN2N工作<a href="https://www.sciengine.com/PXLIFE/doi/10.3724/PXLIFE.2025-0010">[PhotoniX Life, 2026]</a>。</p><a href="projects.html#SN2N">SN2N项目 →</a></div></details>
+            <details class="preview-technique"><summary>aSN2N</summary><div><p>Adaptive SN2N引入自适应预处理与归一化策略，使自监督学习在异质成像条件下更加稳定，并提高对强度变化和背景污染的稳健性，同时抑制重建伪影。</p><a href="projects.html#SN2N">aSN2N项目 →</a></div></details>
+          </div></details>
+        </div>
+      </article>
+      <article class="preview-research-card">
+        <figure class="preview-research-media"><img src="../img/home/bioimage-device.png" alt="Smart bioimage analysis and biomedical devices"></figure>
+        <div class="preview-research-body">
+          <h3>智能生物医学图像分析与成像装置</h3>
+          <p>发展定量生物图像分析方法与紧凑型成像仪器，服务于自动化、高通量生物学研究。</p>
+          <details class="preview-card-details"><summary>展开详情</summary><div class="preview-card-details-body">
+            <p>我们发展智能生物图像分析方法与生物医学成像仪器，服务于自动化、定量和高通量生物学研究。工作涵盖图像分割、追踪、分析和表征学习，以及紧凑、面向应用的成像装置与系统。</p>
+            <h4>代表性技术</h4>
+            <details class="preview-technique"><summary>PANEL</summary><div><p>像素级误差位置分析是一种定量框架，可在超分辨尺度绘制重建误差，并系统评价传统及深度学习重建方法。</p><a href="projects.html#PANEL">PANEL项目 →</a></div></details>
+            <details class="preview-technique"><summary>智能掌上型光流控血液分析仪</summary><div><p>一种基于成像的紧凑型平台，用于白细胞浓度自动测量与快速血液学分析。</p><a href="projects.html#SOHA">智能血液分析仪项目 →</a></div></details>
+            <details class="preview-technique"><summary>光场内窥探头</summary><div><p>以MIRD为起点发展紧凑、灵活的探头，通过新型光学设计与计算成像策略实现单次曝光高分辨率体成像。</p><p class="project-see-also"><strong>另见</strong><a href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">[Optics and Lasers in Engineering, 2026]</a>和<a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">[Optics Express, 2026]</a>。</p><a href="projects.html#endoscope">光场内窥成像项目 →</a></div></details>
+            <details class="preview-technique"><summary>稀疏共聚焦显微成像与单粒子追踪</summary><div><p>该方法揭示SARS-CoV-2病毒样颗粒如何通过沿丝状伪足“冲浪”和“抓取”到达细胞进入位点，从而减少其在质膜上的随机搜索。</p><p class="project-see-also"><strong>另见</strong><a href="https://www.sciencedirect.com/science/article/pii/S0171933525000305">[European Journal of Cell Biology, 2025]</a>。</p><a href="projects.html#informatics">稀疏共聚焦显微成像项目 →</a></div></details>
+          </div></details>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <section class="preview-section" aria-labelledby="news-heading">
     <div class="container">
-  <h1 class="my-4 h2">研究</h1>
-  <div class="row">
-    <div class="col-lg-12 mb-4">
-  <div class="card h-100">
-    <h4 class="card-header">显微成像：系统与算法</h4>
-    <div class="card-body">
-      <p class="card-text">我们致力于发展跨模态的先进生物医学成像技术，研究涵盖新型成像物理、自底向上的系统设计，以及面向具体成像场景的硬件与计算算法协同设计。我们希望在光子或信号预算、采集速度、成像深度和系统复杂度等实际约束下，优化空间、时间与信息分辨能力。</p>
-      <div class="row mt-4 align-items-center">
-        <div class="col-md-7">
-          <p><i>代表性技术：</i></p>
-          <p>
-  <b>(1)</b>
-  <a href="projects.html#SparseDecon">Sparse deconvolution</a>
-  是一种物理信息驱动的重建框架，利用稀疏性与结构连续性突破显微成像系统的既有性能限制，提升分辨率、对比度和信噪比，尤其适用于低信噪比条件。相关应用包括<a href="projects.html#SparseSIM">Sparse-SIM</a>和<a href="projects.html#SparseSDSIM">Sparse SD-SIM</a>。
-</p>
-<p>
-  <b>(2)</b>
-  <a href="projects.html#SACD">SACD</a>
-  是一种基于涨落的超分辨框架，仅使用20帧图像即可将横向和轴向分辨率提高约三倍(2 mm × 1.4 mm视场约需10分钟)，且无需额外光学器件。Sparse-SACD还可实现快速四维活细胞超分辨成像。另见我们的无标记SACD工作<a href="https://www.nature.com/articles/s41377-025-01914-x">[Light: Science &amp; Applications, 2025]</a>。
-</p>
-<p>
-  <b>(3)</b>
-  <a href="https://doi.org/10.1038/s41586-026-10889-7">RIED</a>
-  是一种面向极端光子受限生物发光(BL)和电化学发光(ECL)的反应发光超分辨框架。通过解码内在发光涨落，RIED无需外部光激发或光化学调制即可实现高对比度二维和三维超分辨成像。BL-RIED支持连续超过两天的超分辨成像。
-</p>
-
-        </div>
-        <div class="col-md-5 text-center">
-          <img class="img-fluid rounded" src="../img/home/cell bio objective.png" alt="显微成像系统与算法">
-          <p class="mt-3 mb-0"><small class="text-muted">从成像物理与仪器研制，到计算重建和系统—算法协同设计。</small></p>
-        </div>
-      </div>
-    </div>
-    <div class="card-footer">
-      <a href="projects.html" class="btn btn-primary">了解更多</a>
-    </div>
-  </div>
+      <div class="preview-section-heading"><div><h2 id="news-heading">新闻</h2><p>课题组的重要论文、研究进展与近期动态。</p></div></div>
+      <h3 class="preview-featured-title">新闻卡片</h3>
+<div class="preview-all-cards-grid">
+<a class="news-social-card" href="https://x.com/weisong_zhao/status/2087588848159330551" target="_blank" rel="noopener noreferrer" aria-label="在X查看RIED帖子">
+      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41586-026-10889-7/MediaObjects/41586_2026_10889_Fig1_HTML.png" alt="RIED论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/RIEDfig1.png';"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2026年8月12日</span><strong>RIED发表于Nature</strong><span>一种无激发超分辨显微成像新范式，适用于电化学发光、化学发光和生物发光。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
+    </a>
+<a class="news-social-card" href="https://x.com/weisong_zhao/status/1833799125596557485" target="_blank" rel="noopener noreferrer" aria-label="在X查看SN2N帖子">
+      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41592-024-02400-9/MediaObjects/41592_2024_2400_Fig1_HTML.png" alt="SN2N论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SN2Npro.jpg';"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2024年9月11日</span><strong>SN2N发表于Nature Methods</strong><span>一种媲美监督学习的无监督去噪方法，仅用单幅含噪图像训练，无需干净的真值图像。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
+    </a>
+<a class="news-social-card" href="https://www.nature.com/articles/s41377-024-01379-4" target="_blank" rel="noopener noreferrer" aria-label="阅读《绘制超分辨图像质量》">
+      <span class="news-social-card-media news-social-card-media--contain"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41377-024-01379-4/MediaObjects/41377_2024_1379_Figa_HTML.png" alt="绘制超分辨图像质量论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/PANEL.png';"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">Light: Science &amp; Applications · 新闻与观点</span><strong>绘制超分辨图像质量</strong><span>Ke Xu博士撰写的新闻与观点文章，评述我们利用rFRC定量绘制局部超分辨图像质量的工作。</span><span class="news-social-card-link">阅读文章 ↗</span></span>
+    </a>
+<a class="news-social-card" href="https://www.nature.com/npjimaging/editors" target="_blank" rel="noopener noreferrer" aria-label="查看npj Imaging编辑委员会">
+      <span class="news-social-card-media news-social-card-media--contain"><img src="../img/news/npj.png" alt="npj Imaging编辑委员会预览图" loading="lazy" decoding="async"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">npj Imaging · 编辑委员会</span><strong>担任npj Imaging副主编</strong><span>课题组PI现任npj Imaging副主编。</span><span class="news-social-card-link">查看编辑委员会 ↗</span></span>
+    </a>
+<a class="news-social-card" href="https://x.com/weisong_zhao/status/1735287113766355412" target="_blank" rel="noopener noreferrer" aria-label="在X查看rFRC帖子">
+      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41377-023-01321-0/MediaObjects/41377_2023_1321_Figa_HTML.png" alt="rFRC论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/PANEL.png';"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2023年12月14日</span><strong>rFRC发表于Light: Science &amp; Applications</strong><span>一种在相应超分辨尺度上评估超分辨图像质量的工具。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
+    </a>
+<a class="news-social-card" href="https://www.nature.com/articles/s41566-023-01275-0" target="_blank" rel="noopener noreferrer" aria-label="阅读《解卷积增强涨落检测》">
+      <span class="news-social-card-media news-social-card-media--contain"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41566-023-01275-0/MediaObjects/41566_2023_1275_Fig1_HTML.png" alt="解卷积增强涨落检测论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">Nature Photonics · 新闻与观点</span><strong>解卷积增强涨落检测</strong><span>David Baddeley博士撰写的新闻与观点文章，评述我们的SACD工作及其两步解卷积流程。</span><span class="news-social-card-link">阅读文章 ↗</span></span>
+    </a>
+<a class="news-social-card" href="https://www.nature.com/nphoton/volumes/17/issues/9" target="_blank" rel="noopener noreferrer" aria-label="查看以SACD为封面的Nature Photonics 2023年9月刊">
+      <span class="news-social-card-media news-social-card-media--cover"><img src="https://media.springernature.com/w440/springer-static/cover-hires/journal/41566/17/9" alt="以SACD为封面的Nature Photonics第17卷第9期封面" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">Nature Photonics · 封面 · 2023年9月</span><strong>高效超分辨成像</strong><span>封面展示了通过自相关与两步解卷积获得的宽场超分辨图像。该方法仅需20帧即可将轴向和横向分辨率提高一倍，并在10分钟内以128 nm分辨率完成2 mm × 1.4 mm视野内数千个细胞的成像。</span><span class="news-social-card-link">查看本期内容 ↗</span></span>
+    </a>
+<a class="news-social-card" href="https://x.com/weisong_zhao/status/1669386146529554433" target="_blank" rel="noopener noreferrer" aria-label="在X查看SACD帖子">
+      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41566-023-01234-9/MediaObjects/41566_2023_1234_Fig1_HTML.png" alt="SACD论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
+      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2023年6月15日</span><strong>SACD发表于Nature Photonics</strong><span>SACD将荧光波动检测灵敏度提升数个数量级，仅需20帧即可实现两倍以上的三维分辨率提升。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
+    </a>
 </div>
-<div class="col-lg-12 mb-4">
-  <div class="card h-100">
-    <h4 class="card-header">机器学习：方法与应用</h4>
-    <div class="card-body">
-      <p class="card-text">我们发展面向多维生物医学与自然信号重建、分析的机器学习方法：一方面利用显式的物理与结构先验设计可解释计算模型，另一方面利用数据驱动先验解决传统方法难以处理的问题。研究涵盖自监督学习、表征学习、贝叶斯学习和基础模型，应用包括降低显微成像对光子数、采集时间与硬件的需求，以及加速生物图像重建、表型分析与科学发现。</p>
-      <div class="row mt-4 align-items-center">
-        <div class="col-md-7">
-          <p><i>代表性技术：</i></p>
-          <p>
-  <b>(1)</b>
-  <a href="projects.html#SN2N">SN2N</a>
-  (自启发Noise2Noise)是一种自监督学习降噪框架，性能可媲美监督学习，同时无需大规模配对数据集或干净真值图像。它可对多种生物医学成像数据进行稳健降噪，并支持高光子利用率、长时程和低光毒成像。
-</p>
-<p>
-  <b>(2)</b>
-  <a href="https://www.sciengine.com/PXLIFE/doi/10.3724/PXLIFE.2025-0010">aSN2N</a>
-  (自适应SN2N)引入自适应预处理和归一化策略，使自监督学习在异质成像条件下保持稳定。该方法在有效抑制重建伪影的同时，提高了对强度变化和背景污染的稳健性。
-</p>
-
-        </div>
-        <div class="col-md-5 text-center">
-          <img class="img-fluid rounded" src="../img/home/NN-w.png" alt="面向生物医学成像的机器学习">
-          <p class="mt-3 mb-0"><small class="text-muted">从物理与结构先验，到自监督学习、表征学习和基础模型。</small></p>
-        </div>
-      </div>
-    </div>
-    <div class="card-footer">
-      <a href="projects.html" class="btn btn-primary">了解更多</a>
-    </div>
-  </div>
-</div>
-<div class="col-lg-12 mb-4">
-  <div class="card h-100">
-    <h4 class="card-header">智能生物图像分析与生物医学装置</h4>
-    <div class="card-body">
-      <p class="card-text">我们发展智能生物图像分析方法和生物医学成像仪器，以支持自动化、定量化和高通量生物学研究。研究涵盖图像分割、追踪、表型分析和表征学习，以及紧凑型、面向应用的成像装置与系统开发。</p>
-      <div class="row mt-4 align-items-center">
-        <div class="col-md-7">
-          <p><i>代表性技术：</i></p>
-          <p>
-  <b>(1)</b>
-  <a href="projects.html#PANEL">PANEL</a>
-  (逐像素误差位置分析)是一种在超分辨尺度上绘制重建误差的定量框架，可系统评估传统重建方法和基于深度学习的重建方法。
-</p>
-<p>
-  <b>(2)</b>
-  <a href="projects.html#SOHA">智能掌上型光流控血液分析仪</a>
-  是一种基于紧凑成像平台的装置，用于自动测量白细胞浓度和快速血液学分析。
-</p>
-<p>
-  <b>(3)</b>
-  <a href="projects.html#endoscope">光场内窥探头</a>
-  光场内窥探头以MIRD(多微型成像器件)为起点，通过高柔性、紧凑型探头实现单次曝光的高分辨率体成像。我们持续探索新的光学设计与计算成像策略，以进一步提升成像性能、探头柔性和实用性。另见<a href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">[Optics and Lasers in Engineering, 2026]</a>和<a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">[Optics Express, 2026]</a>。
-</p>
-<p>
-  <b>(4)</b>
-  <a href="projects.html#informatics">稀疏共聚焦显微成像与单颗粒追踪</a>
-  用于揭示SARS-CoV-2病毒样颗粒如何借助丝状伪足，以“滑行”和“抓取”两种不同模式到达细胞进入位点，从而减少在细胞质膜上的随机搜索。另见<a href="https://www.sciencedirect.com/science/article/pii/S0171933525000305">[European Journal of Cell Biology, 2025]</a>。
-</p>
-
-        </div>
-        <div class="col-md-5 text-center">
-          <img class="img-fluid rounded" src="../img/home/bioimage-device.png" alt="智能生物图像分析与生物医学装置">
-          <p class="mt-3 mb-0"><small class="text-muted">从定量生物图像分析到紧凑、面向应用的生物医学装置。</small></p>
-        </div>
-      </div>
-    </div>
-    <div class="card-footer">
-      <a href="projects.html" class="btn btn-primary">了解更多</a>
-    </div>
-  </div>
-</div>
-
-  </div>
-</div>
-
-    <div class="container">
+<h3 class="preview-latest-title">近期新闻</h3>
+<ul class="preview-news-timeline">
+  <li><time datetime="2026-08">2026-08</time><span>RIED工作已在<a href="https://www.nature.com/articles/s41586-026-10889-7">Nature</a>在线发表。</span></li>
+  <li><time datetime="2026-07">2026-07</time><span>祝贺课题组博士生、共同第一作者桂家辉，RIED工作被<i>Nature</i>接收！</span></li>
+  <li><time datetime="2026-04">2026-04</time><span>祝贺课题组博士生苏德尔顺利通过博士学位论文答辩！</span></li>
+  <li><time datetime="2026-04">2026-04</time><span>祝贺课题组博士生苏德尔！其两项光场内窥探头研究分别发表于<a href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">Optics and Lasers in Engineering</a>和<a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">Optics Express</a>。</span></li>
+  <li><time datetime="2026-02">2026-02</time><span>祝贺课题组博士生桂家辉！<a href="https://www.biorxiv.org/content/10.64898/2026.02.04.703714v1">RIED</a>以bioRxiv预印本形式发布，并同步开放<a href="https://github.com/SR-Wiki/RIEDm">MATLAB工具箱</a>。</span></li>
+</ul>
+      <details class="preview-full-archive"><summary>完整新闻档案</summary>    <div class="container">
         <div class="row">
             <div class="col-lg-12 mb-4">
                 <div class="card h-100">
                     <h4 class="card-header">课题组新闻</h4>
 <div class="card-body">
   <div class="card-text">
-    <b style="color:#dc3545;">2026-08：</b> RIED工作已在<a href="https://www.nature.com/articles/s41586-026-10889-7">Nature</a>在线发表。
-    <a class="news-social-card" href="https://x.com/weisong_zhao/status/2087588848159330551" target="_blank" rel="noopener noreferrer" aria-label="在X查看RIED帖子">
-      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41586-026-10889-7/MediaObjects/41586_2026_10889_Fig1_HTML.png" alt="RIED论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/RIEDfig1.png';"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2026年8月12日</span><strong>RIED发表于Nature</strong><span>一种无激发超分辨显微成像新范式，适用于电化学发光、化学发光和生物发光。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
-    </a>
+    <b style="color:#dc3545;">2026-08：</b> RIED工作已在<a href="https://www.nature.com/articles/s41586-026-10889-7">Nature</a>在线发表。<br><br>
     <b>2026-07：</b> 祝贺课题组博士生、共同第一作者桂家辉，RIED工作被<i>Nature</i>接收！<br><br>
     <b style="color:#dc3545;">2026-04：</b> 祝贺课题组博士生苏德尔顺利通过博士学位论文答辩！<br><br>
     <b>2026-04：</b> 祝贺课题组博士生苏德尔！其两项光场内窥探头研究分别发表于<a href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">Optics and Lasers in Engineering</a>和<a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">Optics Express</a>。<br><br>
@@ -398,51 +388,23 @@
     <b>2025-07：</b> <a href="https://github.com/SR-Wiki/">SR-Wiki</a>成为课题组发布最新成像与分析工具的官方GitHub组织，集中提供课题组成像工具的实现。<br><br>
     <b>2025-06：</b> 祝贺课题组博士生朱竞阳！Adaptive SN2N发表于<a href="https://www.sciengine.com/PXLIFE/doi/10.3724/PXLIFE.2025-0010">PhotoniX Life</a>。<br><br>
     <b>2025-04：</b> 祝贺曲丽颖顺利通过博士学位论文答辩！<hr>
-    <b style="color:#dc3545;">2024-09：</b> SN2N工作已在<a href="https://www.nature.com/articles/s41592-024-02400-9">Nature Methods</a>在线发表。
-    <a class="news-social-card" href="https://x.com/weisong_zhao/status/1833799125596557485" target="_blank" rel="noopener noreferrer" aria-label="在X查看SN2N帖子">
-      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41592-024-02400-9/MediaObjects/41592_2024_2400_Fig1_HTML.png" alt="SN2N论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SN2Npro.jpg';"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2024年9月11日</span><strong>SN2N发表于Nature Methods</strong><span>一种媲美监督学习的无监督去噪方法，仅用单幅含噪图像训练，无需干净的真值图像。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
-    </a>
+    <b style="color:#dc3545;">2024-09：</b> SN2N工作已在<a href="https://www.nature.com/articles/s41592-024-02400-9">Nature Methods</a>在线发表。<br><br>
     <b>2024-08：</b> 课题组PI获国家自然科学基金优秀青年科学基金项目资助。<br><br>
     <b>2024-06：</b> 祝贺课题组博士生曲丽颖和黄园园！<a href="https://doi.org/10.1101/2024.01.23.576521">SN2N</a>已被<i>Nature Methods</i>接收。<br><br>
     <b>2024-01：</b> 祝贺课题组博士生曲丽颖和黄园园！<a href="https://doi.org/10.1101/2024.01.23.576521">SN2N</a>以bioRxiv预印本形式发布(已投稿<i>Nature Methods</i>)，并同步开放<a href="https://github.com/WeisongZhao/SN2N">Python</a>工具箱。<br><br>
-    <b>2024-01：</b> Ke Xu博士在<i>Light: Science &amp; Applications</i>发表题为“Mapping super-resolution image quality”的<a href="https://www.nature.com/articles/s41377-024-01379-4">新闻与观点</a>文章，评述我们的<i>rFRC</i>工作。
-    <a class="news-social-card" href="https://www.nature.com/articles/s41377-024-01379-4" target="_blank" rel="noopener noreferrer" aria-label="阅读《绘制超分辨图像质量》">
-      <span class="news-social-card-media news-social-card-media--contain"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41377-024-01379-4/MediaObjects/41377_2024_1379_Figa_HTML.png" alt="绘制超分辨图像质量论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/PANEL.png';"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">Light: Science &amp; Applications · 新闻与观点</span><strong>绘制超分辨图像质量</strong><span>Ke Xu博士撰写的新闻与观点文章，评述我们利用rFRC定量绘制局部超分辨图像质量的工作。</span><span class="news-social-card-link">阅读文章 ↗</span></span>
-    </a>
+    <b>2024-01：</b> Ke Xu博士在<i>Light: Science &amp; Applications</i>发表题为“Mapping super-resolution image quality”的<a href="https://www.nature.com/articles/s41377-024-01379-4">新闻与观点</a>文章，评述我们的<i>rFRC</i>工作。<br><br>
     <b>2024-01：</b> 课题组PI受聘为<a href="http://homepage.hit.edu.cn/weisongzhao">教授</a>。<br><br>
     <b>2024-01：</b> 课题组PI现任<a href="https://www.nature.com/npjimaging/editors">npj Imaging</a>副主编。
-    <a class="news-social-card" href="https://www.nature.com/npjimaging/editors" target="_blank" rel="noopener noreferrer" aria-label="查看npj Imaging编辑委员会">
-      <span class="news-social-card-media news-social-card-media--contain"><img src="../img/news/npj.png" alt="npj Imaging编辑委员会预览图" loading="lazy" decoding="async"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">npj Imaging · 编辑委员会</span><strong>担任npj Imaging副主编</strong><span>课题组PI现任npj Imaging副主编。</span><span class="news-social-card-link">查看编辑委员会 ↗</span></span>
-    </a>
     <hr>
-    <b style="color:#dc3545;">2023-12：</b> <i>rFRC</i>工作已在<a href="https://www.nature.com/articles/s41377-023-01321-0">Light: Science &amp; Applications</a>在线发表。
-    <a class="news-social-card" href="https://x.com/weisong_zhao/status/1735287113766355412" target="_blank" rel="noopener noreferrer" aria-label="在X查看rFRC帖子">
-      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41377-023-01321-0/MediaObjects/41377_2023_1321_Figa_HTML.png" alt="rFRC论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/PANEL.png';"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2023年12月14日</span><strong>rFRC发表于Light: Science &amp; Applications</strong><span>一种在相应超分辨尺度上评估超分辨图像质量的工具。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
-    </a>
+    <b style="color:#dc3545;">2023-12：</b> <i>rFRC</i>工作已在<a href="https://www.nature.com/articles/s41377-023-01321-0">Light: Science &amp; Applications</a>在线发表。<br><br>
     <b>2023-12：</b> 在<a href="https://communities.springernature.com/posts/a-nice-piece-of-the-puzzle-for-super-resolution-microscopy">Nature Research Community</a>发布关于<i>rFRC</i>的“论文背后”博客。<br><br>
     <b>2023-12：</b> 祝贺课题组博士生苏德尔！<i>Smart palm-size optofluidic hematology analyzer</i>受邀发表于<a href="https://doi.org/10.29026/oes.2023.230018">Opto-Electronic Science</a>。<br><br>
     <b>2023-12：</b> 祝贺课题组博士生苏德尔！<i>MIRD volumetric endoscope</i>发表于<a href="https://doi.org/10.1364/OL.506261">Optics Letters</a>，并入选第48卷<a href="https://opg.optica.org/ol/issue.cfm?volume=48&issue=24">第24期</a>特色图片。<br><br>
-    <b>2023-09：</b> David Baddeley博士在<a href="https://www.nature.com/articles/s41566-023-01275-0">Nature Photonics</a>发表题为“Deconvolution enhances fluctuation detection”的新闻与观点文章，评述我们的<i>SACD</i>工作。
-    <a class="news-social-card" href="https://www.nature.com/articles/s41566-023-01275-0" target="_blank" rel="noopener noreferrer" aria-label="阅读《解卷积增强涨落检测》">
-      <span class="news-social-card-media news-social-card-media--contain"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41566-023-01275-0/MediaObjects/41566_2023_1275_Fig1_HTML.png" alt="解卷积增强涨落检测论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">Nature Photonics · 新闻与观点</span><strong>解卷积增强涨落检测</strong><span>David Baddeley博士撰写的新闻与观点文章，评述我们的SACD工作及其两步解卷积流程。</span><span class="news-social-card-link">阅读文章 ↗</span></span>
-    </a>
-    <b style="color:#dc3545;">2023-09：</b> <i>SACD</i>入选<a href="https://www.nature.com/nphoton/volumes/17/issues/9">Nature Photonics 2023年9月第17卷第9期</a>封面文章。
-    <a class="news-social-card" href="https://www.nature.com/nphoton/volumes/17/issues/9" target="_blank" rel="noopener noreferrer" aria-label="查看以SACD为封面的Nature Photonics 2023年9月刊">
-      <span class="news-social-card-media news-social-card-media--cover"><img src="https://media.springernature.com/w440/springer-static/cover-hires/journal/41566/17/9" alt="以SACD为封面的Nature Photonics第17卷第9期封面" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">Nature Photonics · 封面 · 2023年9月</span><strong>高效超分辨成像</strong><span>封面展示了通过自相关与两步解卷积获得的宽场超分辨图像。该方法仅需20帧即可将轴向和横向分辨率提高一倍，并在10分钟内以128 nm分辨率完成2 mm × 1.4 mm视野内数千个细胞的成像。</span><span class="news-social-card-link">查看本期内容 ↗</span></span>
-    </a>
+    <b>2023-09：</b> David Baddeley博士在<a href="https://www.nature.com/articles/s41566-023-01275-0">Nature Photonics</a>发表题为“Deconvolution enhances fluctuation detection”的新闻与观点文章，评述我们的<i>SACD</i>工作。<br><br>
+    <b style="color:#dc3545;">2023-09：</b> <i>SACD</i>入选<a href="https://www.nature.com/nphoton/volumes/17/issues/9">Nature Photonics 2023年9月第17卷第9期</a>封面文章。<br><br>
     <b>2023-08：</b> 我们与Yaming Jiu课题组利用<i>稀疏解卷积</i>增强的共聚焦显微成像，揭示SARS-CoV-2调控并利用动态丝状伪足实现病毒入侵的过程；研究在线发表于<a href="https://doi.org/10.1016/j.scib.2023.08.031">Science Bulletin</a>。<br><br>
     <b>2023-06：</b> 在<a href="https://communities.springernature.com/posts/super-resolution-made-easier">Nature Research Community</a>发布关于<i>SACD</i>的“论文背后”博客。<br><br>
     <b>2023-06：</b> <i>SACD</i>已在<a href="https://doi.org/10.1038/s41566-023-01234-9">Nature Photonics</a>在线发表。
-    <a class="news-social-card" href="https://x.com/weisong_zhao/status/1669386146529554433" target="_blank" rel="noopener noreferrer" aria-label="在X查看SACD帖子">
-      <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41566-023-01234-9/MediaObjects/41566_2023_1234_Fig1_HTML.png" alt="SACD论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
-      <span class="news-social-card-body"><span class="news-social-card-meta">X · 2023年6月15日</span><strong>SACD发表于Nature Photonics</strong><span>SACD将荧光波动检测灵敏度提升数个数量级，仅需20帧即可实现两倍以上的三维分辨率提升。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
-    </a>
     <details class="news-archive">
       <summary>2022</summary>
       <div class="news-archive-content">
@@ -468,7 +430,11 @@
                 </div>
             </div>
         </div>
+    </div></details>
     </div>
+  </section>
+</main>
+
     <!-- /.container -->
     <footer class="py-5 bg-dark">
   <div class="container">
@@ -479,6 +445,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/home-research.js"></script>
 </body>
 
 </html>

@@ -32,7 +32,7 @@ body {
 .pi-name {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -51,6 +51,12 @@ body {
   vertical-align: -0.12em;
 }
 
+.profile-links-divider {
+  margin: 0 0.08rem;
+  color: #adb5bd;
+  font-weight: 400;
+}
+
 .orcid-link img,
 .profile-icon-link img {
   width: 1.15em;
@@ -62,6 +68,322 @@ body {
 .profile-icon-link:focus {
   outline: 2px solid #0b6f3c;
   outline-offset: 2px;
+}
+
+.publication-profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
+.publication-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid #dce2e8;
+  border-radius: 0.55rem;
+  background: #fff;
+  color: #212529;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 0.2rem 0.7rem rgba(33, 37, 41, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.publication-profile-link img {
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+}
+
+.publication-profile-link:hover,
+.publication-profile-link:focus {
+  border-color: #9cc8f5;
+  color: #087df1;
+  text-decoration: none;
+  box-shadow: 0 0.35rem 0.9rem rgba(8, 125, 241, 0.14);
+  transform: translateY(-1px);
+}
+
+.resource-profile-links {
+  margin: 0 0 1.25rem;
+}
+
+.resource-profile-link {
+  width: auto;
+  max-width: 100%;
+  align-items: flex-start;
+  line-height: 1.3;
+}
+
+.publication-metrics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  min-height: 6.25rem;
+}
+
+.publication-metrics > .__dimensions_badge_embed__ {
+  display: block;
+  min-height: 1.75rem;
+}
+
+.publication-metrics > .altmetric-embed {
+  min-height: 4rem;
+}
+
+/* Publications use a 3 + 8 + 1 Bootstrap grid on tablet/desktop. */
+@media (min-width: 768px) {
+  .publications-page .publication-metrics {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .publications-page .publication-metrics {
+    flex-direction: row;
+    align-items: center;
+    min-height: 0;
+  }
+}
+
+.resource-profile-link > span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+
+.resource-profile-link small {
+  color: #65717d;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Shared item cards for Projects, Publications, and Resources. */
+.content-hover-card {
+  position: relative;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  padding: 1.25rem 0.25rem;
+  overflow: hidden;
+  border: 1px solid #e1e6eb;
+  border-radius: 0.65rem;
+  background: #fff;
+  box-shadow: 0 0.2rem 0.75rem rgba(33, 37, 41, 0.07);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.content-hover-card:hover,
+.content-hover-card:focus-within {
+  border-color: #a9ccef;
+  box-shadow: 0 0.75rem 1.8rem rgba(33, 92, 145, 0.16);
+  transform: translateY(-3px);
+}
+
+/* Keep anchored headings below the fixed navigation bar. */
+.content-hover-card,
+.content-hover-card [id] {
+  scroll-margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  .publications-page .content-hover-card > [class*="col-"] {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-hover-card {
+    transition: none;
+  }
+
+  .content-hover-card:hover,
+  .content-hover-card:focus-within {
+    transform: none;
+  }
+}
+
+.gallery-comparison-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 0.55rem 1rem;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.gallery-comparison-heading span {
+  color: #212529;
+  font-weight: 600;
+}
+
+.gallery-comparison-heading small {
+  color: #6c757d;
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
+.gallery-project-title {
+  margin: 2.25rem 0 0.65rem;
+  color: #212529;
+  font-weight: 650;
+  scroll-margin-top: 5rem;
+}
+
+/* Keep cross-page project anchors visible below the site navigation. */
+#SparseDecon,
+#Sparse-deconvolution,
+#Sparse,
+#SparseSIM,
+#SparseSDSIM,
+#SACD,
+#RIED,
+#SN2N,
+#PANEL,
+#endoscope,
+#SOHA,
+#informatics,
+#BioImageInformatics,
+#BioImageInformatics-SARSCoV2,
+#aSN2N {
+  scroll-margin-top: 5rem;
+}
+
+.project-context-nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0 0 1rem;
+  padding: 0.25rem;
+  border: 1px solid #dfe4e8;
+  border-radius: 0.6rem;
+  background: #f7f9fa;
+}
+
+.project-context-nav a {
+  padding: 0.42rem 0.72rem;
+  border-radius: 0.42rem;
+  color: #495057;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.project-context-nav a:hover,
+.project-context-nav a:focus {
+  background: #e7f2fe;
+  color: #087df1;
+  text-decoration: none;
+}
+
+.project-context-nav a.active {
+  background: #087df1;
+  color: #fff;
+}
+
+.project-see-also {
+  margin: 0.8rem 0 1rem;
+  padding: 0.65rem 0.8rem;
+  border-left: 3px solid #087df1;
+  border-radius: 0 0.35rem 0.35rem 0;
+  background: #f7f9fa;
+  color: #495057;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.project-see-also strong {
+  margin-right: 0.25rem;
+  color: #212529;
+}
+
+@media (max-width: 575.98px) {
+  .project-context-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .project-context-nav a {
+    text-align: center;
+  }
+
+  .gallery-comparison-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.publication-profile-link:focus {
+  outline: 2px solid rgba(8, 125, 241, 0.35);
+  outline-offset: 2px;
+}
+
+.publication-text-cover {
+  display: flex;
+  min-height: 220px;
+  padding: 1.4rem;
+  border-radius: 0.25rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  line-height: 1.05;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.publication-text-cover span {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.publication-text-cover strong {
+  margin-top: 0.25rem;
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+}
+
+a:hover .publication-text-cover,
+a:focus .publication-text-cover {
+  box-shadow: 0 0.7rem 1.5rem rgba(27, 45, 65, 0.18);
+  transform: translateY(-2px);
+}
+
+.publication-text-cover-pxlife {
+  background: linear-gradient(145deg, #163967, #17a2b8);
+}
+
+.publication-text-cover-ejcb {
+  background: linear-gradient(145deg, #5a294f, #d26a4a);
+}
+
+@media (max-width: 575.98px) {
+  .pi-name {
+    display: block;
+  }
+
+  .pi-name .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+    white-space: normal;
+  }
+
+  .publication-profile-link {
+    flex: 1 1 100%;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .contact-map-column {

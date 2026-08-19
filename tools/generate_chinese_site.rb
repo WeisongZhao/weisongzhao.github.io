@@ -5,14 +5,14 @@ ZH_DIR = File.join(ROOT, "zh")
 SITE_URL = "https://weisongzhao.github.io".freeze
 
 PAGES = %w[
-  index.html team.html projects.html projects-archive.html open-source.html
-  open-source-archive.html publications.html gallery.html contact.html 404.html
+  index.html team.html projects.html projects2.html resources.html
+  resources2.html publications.html gallery.html contact.html 404.html
 ].freeze
 
 NAV_LABELS = {
   "team.html" => "团队",
   "projects.html" => "项目",
-  "open-source.html" => "开源",
+  "resources.html" => "开源",
   "publications.html" => "论文",
   "gallery.html" => "画廊",
   "contact.html" => "联系"
@@ -37,19 +37,19 @@ SEO = {
     zh_title: "项目 | 赵唯淞课题组",
     zh_description: "赵唯淞课题组的研究项目，包括稀疏解卷积、SACD、RIED、SN2N、超分辨显微成像与生物医学图像分析。"
   },
-  "projects-archive.html" => {
+  "projects2.html" => {
     en_title: "Project Archive | Weisong Zhao Lab",
     en_description: "Archived research projects from the Weisong Zhao Lab in computational microscopy, biomedical imaging, and image reconstruction.",
     zh_title: "项目归档 | 赵唯淞课题组",
     zh_description: "赵唯淞课题组在计算显微成像、生物医学成像和图像重建方向的项目归档。"
   },
-  "open-source.html" => {
+  "resources.html" => {
     en_title: "Resources | Weisong Zhao Lab",
     en_description: "Research resources from the Weisong Zhao Lab, including code, papers, instruments, galleries, and imaging toolkits for Sparse deconvolution, SACD, RIED, PANEL, and SN2N.",
     zh_title: "开源 | 赵唯淞课题组",
     zh_description: "赵唯淞课题组发布的开源成像软件，包括稀疏解卷积、SACD、RIED、PANEL和SN2N工具箱。"
   },
-  "open-source-archive.html" => {
+  "resources2.html" => {
     en_title: "Resource Archive | Weisong Zhao Lab",
     en_description: "Archived microscopy and image-analysis resources developed or maintained by the Weisong Zhao Lab.",
     zh_title: "开源软件归档 | 赵唯淞课题组",
@@ -704,9 +704,9 @@ PAGES.each do |page|
   when "index.html" then translate_home(chinese)
   when "team.html" then translate_team(chinese)
   when "projects.html" then translate_projects(chinese)
-  when "projects-archive.html" then translate_projects_archive(chinese)
-  when "open-source.html" then translate_open_source(chinese)
-  when "open-source-archive.html" then translate_archive_tools(chinese)
+  when "projects2.html" then translate_projects_archive(chinese)
+  when "resources.html" then translate_open_source(chinese)
+  when "resources2.html" then translate_archive_tools(chinese)
   when "gallery.html" then translate_gallery(chinese)
   when "contact.html" then translate_contact(chinese)
   when "404.html" then translate_not_found(chinese)

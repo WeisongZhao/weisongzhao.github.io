@@ -31,7 +31,7 @@
     <link rel="alternate" hreflang="x-default" href="https://weisongzhao.github.io/publications.html">
 </head>
 
-<body>
+<body class="publications-page">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">Home</a>
@@ -42,8 +42,8 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="open-source.html">Resources</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item language-switcher" role="group" aria-label="Language">
@@ -68,187 +68,232 @@
             </li>
             <li class="breadcrumb-item active">Publications</li>
         </ol>
-        <h3><a href="https://scholar.google.com/citations?user=8FzeX8sAAAAJ&hl=en">Google Scholar</a></h3>
+        <div class="publication-profile-links" aria-label="Researcher profiles">
+            <a class="publication-profile-link" href="https://scholar.google.com/citations?user=8FzeX8sAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+                <img src="img/site/google-scholar.svg" alt="" aria-hidden="true">
+                <span>Google Scholar</span>
+            </a>
+            <a class="publication-profile-link" href="https://orcid.org/0000-0002-5969-1956" target="_blank" rel="me noopener noreferrer">
+                <img src="img/site/orcid.svg" alt="" aria-hidden="true">
+                <span>ORCID</span>
+            </a>
+        </div>
         <hr />
         <h3>
             <font color="#000000">2026</font>
         </h3>
         <hr>
-        <div class="row">
+        <div class="row content-hover-card" id="RIED">
             <div class="col-md-3 mb-4">
                 <a href="https://doi.org/10.1038/s41586-026-10889-7">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/RIED Cover.jpg" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>Luminescent-reaction-enabled super-resolution imaging</h5>
+                <nav class="project-context-nav" aria-label="RIED project links"><a href="projects.html#RIED">Overview</a><a class="active" href="#RIED" aria-current="page">Paper</a><a href="resources.html#RIED">Code</a><a href="gallery.html#RIED">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Wenxin Zhu#, Chi Zhang#, Jiahui Gui#, Yibo Yang, Yuxin Wan, Xin Wang, Liying Qu, Ao Guo, Ziqing Zhang, Zhenqian Han, <b>Weisong Zhao*</b>, Jiandong Feng*.
                 <br>
                 <b>Journal</b>: Nature<br>
                 <b>Keywords</b>: ECL; BL; SACD; microscopy; RIED.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.1038/s41586-026-10889-7">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="open-source.html#RIED">Code
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#RIED">Gallery
+                <a class="btn btn-primary" href="https://doi.org/10.1038/s41586-026-10889-7">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41586-026-10889-7" data-style="small_rectangle"></span>
                 <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1038/s41586-026-10889-7'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
-                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41586-026-10889-7" data-style="small_rectangle"></span>
+        </div>
+        
+        <div class="row content-hover-card" id="aSN2N">
+            <div class="col-md-3 mb-4">
+                <a href="https://www.sciengine.com/PXLIFE/doi/10.3724/PXLIFE.2025-0010">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/PRXLife.png" alt="PhotoniX Life article cover">
+                </a>
+            </div>
+            <div class="col-md-8 mb-4">
+                <h5>Artifact-suppressed and adaptive self-inspired learning denoising for super-resolution fluorescence microscopy</h5>
+                <nav class="project-context-nav" aria-label="SN2N project links"><a href="projects.html#SN2N">Overview</a><a class="active" href="#aSN2N" aria-current="page">Paper</a><a href="gallery.html#SN2N">Gallery</a></nav>
+                <hr>
+                <b>Authors</b>: Jingyang Zhu, Yuzhen Liu, Yuanyuan Huang, Xianxin Ye, Shiqun Zhao, Xiangyan Ding, Liangyi Chen, Haoyu Li, Liying Qu* &amp; <b>Weisong Zhao*</b>.
+                <br>
+                <b>Journal</b>: PhotoniX Life<br>
+                <b>Keywords</b>: Deep learning; Self-supervised denoising; Artifact suppression; Super-resolution microscopy; adaptive SN2N.
+                <hr>
+                <a class="btn btn-primary" href="https://www.sciengine.com/PXLIFE/doi/10.3724/PXLIFE.2025-0010">Paper link
+                    <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.3724/PXLIFE.2025-0010" data-style="small_rectangle"></span>
             </div>
         </div>
-        <hr style="border-color:#000000;">
-        <div class="row">
+        
+        <div class="row content-hover-card" id="endoscope-OLE">
             <div class="col-md-3 mb-4">
                 <a href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/OLE.jpg" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>Instant mapping of digestive morphology via spatio-angular disparity-resolved endoscopy</h5>
+                <nav class="project-context-nav" aria-label="Endoscope project links"><a href="projects.html#endoscope">Overview</a><a class="active" href="#endoscope-OLE" aria-current="page">Paper</a><a href="gallery.html#endoscope">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Deer Su#, Chen Hu#, Guanying Liang#, Junyu Zhao, Zhenqian Han, Zhipeng Ma, Changliang Guo, Weida Gao, Liang Li, Liying Qu, Guanyu Shang, Bo Qu, Xiangyan Ding, Haoyu Li*, <b>Weisong Zhao*</b>, Wenhao Liu*
                 <br>
                 <b>Journal</b>: Optics and Lasers in Engineering<br>
                 <b>Keywords</b>: Endoscopy; Endoscopic probe; Light-field; 3D; Medical imaging.
                 <hr>
-                <a class="btn btn-primary" href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#endoscope">Gallery
+                <a class="btn btn-primary" href="https://www.sciencedirect.com/science/article/pii/S0143816626002605">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
             </div>
-            <div class="col-md-0.5 mb-4">
+            <div class="col-md-1 mb-4 publication-metrics">
                 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.optlaseng.2026.109856" data-style="small_rectangle"></span>
             </div>
         </div>
-        <hr style="border-color:#000000;">
-        <div class="row">
+        
+        <div class="row content-hover-card" id="endoscope-HERALDS">
             <div class="col-md-3 mb-4">
                 <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/OE.jpg" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>HERALDS: a flexible, high-resolution volumetric endoscopy—design, calibration, and performance evaluation</h5>
+                <nav class="project-context-nav" aria-label="Endoscope project links"><a href="projects.html#endoscope">Overview</a><a class="active" href="#endoscope-HERALDS" aria-current="page">Paper</a><a href="gallery.html#endoscope">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Deer Su#, Chen Hu#, Guanying Liang#, Junyu Zhao, Zhenqian Han, Zhipeng Ma, Liang Li, Changliang Guo, Weida Gao, Liying Qu, Guanyu Shang, Bo Qu, Xiangyan Ding, Haoyu Li*, <b>Weisong Zhao*</b>, Wenhao Liu*
                 <br>
                 <b>Journal</b>: Optics Express<br>
                 <b>Keywords</b>: Endoscope; Light-field;.
                 <hr>
-                <a class="btn btn-primary" href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#endoscope">Gallery
+                <a class="btn btn-primary" href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-8-15664">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
             </div>
-            <div class="col-md-0.5 mb-4">
+            <div class="col-md-1 mb-4 publication-metrics">
                 <span class="__dimensions_badge_embed__" data-doi="10.1364/OE.586749" data-style="small_rectangle"></span>
             </div>
         </div>
-        <hr style="border-color:#000000;">
+        
         <h3>
             <font color="#000000">2025</font>
         </h3>
         <hr>
-        <div class="row">
+        <div class="row content-hover-card" id="BioImageInformatics">
+            <div class="col-md-3 mb-4">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0171933525000305">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/ecjb.jpg" alt="European Journal of Cell Biology article cover">
+                </a>
+            </div>
+            <div class="col-md-8 mb-4">
+                <h5>Vimentin intermediate filaments facilitate transportation of hepatitis C virus components</h5>
+                <nav class="project-context-nav" aria-label="Bio-image informatics project links"><a href="projects.html#informatics">Overview</a><a class="active" href="#BioImageInformatics" aria-current="page">Paper</a><a href="gallery.html#SparseSDSIM">Gallery</a></nav>
+                <hr>
+                <b>Authors</b>: Yifan Xing#, Shuzhi Cui#, Xinyi Huang#, <b>Weisong Zhao#</b>, Haoyu Li, Jing Zhao, Wakam Chang, Shuangshuang Zhao*, Jin Zhong*, Yuxin Chen* &amp; Yaming Jiu*.
+                <br>
+                <b>Journal</b>: European Journal of Cell Biology<br>
+                <b>Keywords</b>: Intermediate filaments; Cytoskeletal vimentin; Viral cell-cell transmission; Hepatitis C virus; Host-pathogen interaction.
+                <hr>
+                <a class="btn btn-primary" href="https://www.sciencedirect.com/science/article/pii/S0171933525000305">Paper link
+                    <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ejcb.2025.151505" data-style="small_rectangle"></span>
+            </div>
+        </div>
+        
+        <div class="row content-hover-card" id="SN2N-CTM">
             <div class="col-md-3 mb-4">
                 <a href="https://onlinelibrary.wiley.com/doi/10.1002/ctm2.70390">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/CTM.jpg" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>Clinical translation potential of self‐inspired live‐cell super‐resolution microscopy</h5>
+                <nav class="project-context-nav" aria-label="SN2N project links"><a href="projects.html#SN2N">Overview</a><a class="active" href="#SN2N-CTM" aria-current="page">Paper</a><a href="gallery.html#SN2N">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Liying Qu, Jingyang Zhu, Xiangyan Ding, Haoyu Li & <b>Weisong Zhao*</b>.
                 <br>
                 <b>Journal</b>: Clinical and Translational Medicine<br>
                 <b>Keywords</b>: Denoising; Deep learning; Unsupervised learning; microscopy; SN2N.
                 <hr>
-                <a class="btn btn-primary" href="https://onlinelibrary.wiley.com/doi/10.1002/ctm2.70390">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#SN2N">Gallery
+                <a class="btn btn-primary" href="https://onlinelibrary.wiley.com/doi/10.1002/ctm2.70390">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.1002/ctm2.70390" data-style="small_rectangle"></span>
                 <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1002/ctm2.70390'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
-                <span class="__dimensions_badge_embed__" data-doi="10.1002/ctm2.70390" data-style="small_rectangle"></span>
-            </div>
         </div>
-        <hr style="border-color:#000000;">
+        
         <h3>
             <font color="#000000">2024</font>
         </h3>
         <hr>
-        <div class="row">
+        <div class="row content-hover-card" id="SN2N">
             <div class="col-md-3 mb-4">
                 <a href="https://doi.org/10.1038/s41592-024-02400-9">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="https://media.springernature.com/w440/springer-static/cover-hires/journal/41592/21/10" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>Self-inspired learning for denoising live-cell super-resolution microscopy</h5>
+                <nav class="project-context-nav" aria-label="SN2N project links"><a href="projects.html#SN2N">Overview</a><a class="active" href="#SN2N" aria-current="page">Paper</a><a href="resources.html#SN2N">Code</a><a href="gallery.html#SN2N">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Liying Qu#, Shiqun Zhao#, Yuanyuan Huang#, Xianxin Ye, Kunhao Wang, Yuzhen Liu, Xianming Liu, Heng Mao, Guangwei Hu, Wei Chen, Changliang Guo, Jiaye He, Jiubin Tan, Haoyu Li, Liangyi Chen & <b>Weisong Zhao*</b>.
                 <br>
                 <b>Journal</b>: Nature Methods<br>
                 <b>Keywords</b>: Denoising; Deep learning; Unsupervised learning; microscopy; SN2N.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.1038/s41592-024-02400-9">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="open-source.html#SN2N">Code
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#SN2N">Gallery
+                <a class="btn btn-primary" href="https://doi.org/10.1038/s41592-024-02400-9">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41592-024-02400-9" data-style="small_rectangle"></span>
                 <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1038/s41592-024-02400-9'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
-                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41592-024-02400-9" data-style="small_rectangle"></span>
-            </div>
         </div>
-        <hr style="border-color:#000000;">
+        
         <h3>
             <font color="#000000">2023</font>
         </h3>
         <hr>
-        <div class="row">
+        <div class="row content-hover-card" id="PANEL">
             <div class="col-md-3 mb-4">
                 <a href="https://doi.org/10.1038/s41377-023-01321-0">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/PANEL.png" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>Quantitatively mapping local quality of super-resolution microscopy by rolling Fourier ring correlation</h5>
+                <nav class="project-context-nav" aria-label="PANEL project links"><a href="projects.html#PANEL">Overview</a><a class="active" href="#PANEL" aria-current="page">Paper</a><a href="resources.html#PANEL">Code</a><a href="gallery.html#PANEL">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: <b>Weisong Zhao</b>#, Xiaoshuai Huang#, Jianyu Yang#, Liying Qu, Guohua Qiu, Yue Zhao, Xinwei Wang, Deer Su, Xumin Ding, Heng Mao, Yaming Jiu, Ying Hu, Jiubin Tan, Shiqun Zhao<b>*</b>, Leiting Pan<b>*</b>, Liangyi Chen<b>*</b>, and Haoyu Li<b>*</b>.
                 <br>
                 <b>Journal</b>: Light: Science & Applications<br>
                 <b>Keywords</b>: Image quality; Uncertainty; Super-resolution; Fluorescence microscopy; rFRC.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.1038/s41377-023-01321-0">Paper
+                <a class="btn btn-primary" href="https://doi.org/10.1038/s41377-023-01321-0">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-024-01379-4">News & views
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="open-source.html#PANEL">Code
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#PANEL">Gallery
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41377-023-01321-0" data-style="small_rectangle"></span>
                 <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1038/s41377-023-01321-0'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
-                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41377-023-01321-0" data-style="small_rectangle"></span>
-            </div>
         </div>
-        <hr style="border-color:#000000;">
-        <div class="row">
+        
+        <div class="row content-hover-card" id="SOHA">
             <div class="col-md-3 mb-4">
                 <a href="https://www.oejournal.org/oes/article/2023/12">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/OES.jpg" alt="">
@@ -256,24 +301,23 @@
             </div>
             <div class="col-md-8 mb-4">
                 <h5>Smart palm-size optofluidic hematology analyzer for automated imaging-based leukocyte concentration detection</h5>
+                <nav class="project-context-nav" aria-label="Hematology analyzer project links"><a href="projects.html#SOHA">Overview</a><a class="active" href="#SOHA" aria-current="page">Paper</a><a href="gallery.html#SOHA">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Deer Su, Xiangyu Li, Weida Gao, Qiuhua Wei, Haoyu Li, Changliang Guo* & <b>Weisong Zhao*</b>.<br>
                 <b>Journal</b>: Opto-Electronic Science (invited)<br>
                 <b>Keywords</b>: Hematology analyzer; Miniature fluorescence microscope; Microfluidics; Leukocyte concentration.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.29026/oes.2023.230018">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#SOHA">Gallery
+                <a class="btn btn-primary" href="https://doi.org/10.29026/oes.2023.230018">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.29026/oes.2023.230018" data-style="small_rectangle"></span>
                 <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.29026/oes.2023.230018'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
-                <span class="__dimensions_badge_embed__" data-doi="10.29026/oes.2023.230018" data-style="small_rectangle"></span>
-            </div>
         </div>
-        <hr style="border-color:#000000;">
-        <div class="row">
+        
+        <div class="row content-hover-card" id="endoscope">
             <div class="col-md-3 mb-4">
                 <a href="https://opg.optica.org/ol/issue.cfm?volume=48&issue=24">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/osa-ol.jpg" alt="">
@@ -281,23 +325,22 @@
             </div>
             <div class="col-md-8 mb-4">
                 <h5>Highly flexible and compact volumetric endoscope by integrating multiple micro-imaging devices</h5>
+                <nav class="project-context-nav" aria-label="Endoscope project links"><a href="projects.html#endoscope">Overview</a><a class="active" href="#endoscope" aria-current="page">Paper</a><a href="gallery.html#endoscope">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Deer Su, Xiangyu Li, Weida Gao, Qiuhua Wei, Haoyu Li, Changliang Guo* & <b>Weisong Zhao*</b>.
                 <br>
                 <b>Journal</b>: Optics Letters (featured image)<br>
                 <b>Keywords</b>: Endoscopy; Endoscopic probe; Light-field; 3D; Medical imaging; MIRD.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.1364/OL.506261">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#endoscope">Gallery
+                <a class="btn btn-primary" href="https://doi.org/10.1364/OL.506261">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-            <div class="col-md-0.5 mb-4">
+            <div class="col-md-1 mb-4 publication-metrics">
                 <span class="__dimensions_badge_embed__" data-doi="10.1364/OL.506261" data-style="small_rectangle"></span>
             </div>
         </div>
-        <hr style="border-color:#000000;">
-        <div class="row">
+        
+        <div class="row content-hover-card" id="BioImageInformatics-SARSCoV2">
             <div class="col-md-3 mb-4">
                 <a href="https://www.sciencedirect.com/journal/science-bulletin/vol/68/issue/19">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/SB.jpg" alt="">
@@ -305,83 +348,78 @@
             </div>
             <div class="col-md-8 mb-4">
                 <h5>Single particle tracking reveals SARS-CoV-2 regulating and utilizing dynamic filopodia for viral invasion</h5>
+                <nav class="project-context-nav" aria-label="Bio-image informatics project links"><a href="projects.html#informatics">Overview</a><a class="active" href="#BioImageInformatics-SARSCoV2" aria-current="page">Paper</a><a href="gallery.html#SparseSDSIM">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: Y. Zhang#, X. Zhang#, Z. Li#, <b>Weisong Zhao#</b>, H. Yang, D. Tang, S. Zhao, Q. Zhang, H. Liu, H. Li, B. Li, P. Lappalainen, Z. Cui*, & Y. Jiu*
                 <br>
                 <b>Journal</b>: Science Bulletin<br>
                 <b>Keywords</b>: SARS-CoV-2; Cytoskeleton; Confocal; Sparse deconvolution; Single particle tracking.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.1016/j.scib.2023.08.031">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#SparseSDSIM">Gallery
+                <a class="btn btn-primary" href="https://doi.org/10.1016/j.scib.2023.08.031">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.1016/j.scib.2023.08.031" data-style="small_rectangle"></span>
                 <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1016/j.scib.2023.08.031'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
-                <span class="__dimensions_badge_embed__" data-doi="10.1016/j.scib.2023.08.031" data-style="small_rectangle"></span>
-            </div>
         </div>
-        <hr style="border-color:#000000;">
-        <div class="row">
+        
+        <div class="row content-hover-card" id="SACD">
             <div class="col-md-3 mb-4">
                 <a href="https://www.nature.com/nphoton/volumes/17/issues/9">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="img/publications/sacd.png" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>Enhanced detection of fluorescence fluctuations for high-throughput super-resolution imaging</h5>
+                <nav class="project-context-nav" aria-label="SACD project links"><a href="projects.html#SACD">Overview</a><a class="active" href="#SACD" aria-current="page">Paper</a><a href="resources.html#SACD">Code</a><a href="gallery.html#SACD">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: <b>Weisong Zhao</b>#, Shiqun Zhao#, Zhenqian Han#, Xiangyan Ding#, Guangwei Hu, Liying Qu, Yuanyuan Huang, Xinwei Wang, Heng Mao,Yaming Jiu, Ying Hu, Jiubin Tan, Xumin Ding<b>*</b>, Liangyi Chen<b>*</b>, Changliang Guo<b>*</b>, and Haoyu Li<b>*</b>.
                 <br>
                 <b>Journal</b>: Nature Photonics (cover)<br>
                 <b>Keywords</b>: High-throughput; Super-resolution; Fluorescence microscopy; SACD.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.1038/s41566-023-01234-9">Paper
+                <a class="btn btn-primary" href="https://doi.org/10.1038/s41566-023-01234-9">Paper link
+                    <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://www.nature.com/nphoton/volumes/17/issues/9">Cover
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <a class="btn btn-primary" href="https://www.nature.com/articles/s41566-023-01275-0">News & views
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="open-source.html#SACD">Code
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#SACD">Gallery
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
+            </div>
+            <div class="col-md-1 mb-4 publication-metrics">
+                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41566-023-01234-9" data-style="small_rectangle"></span>
                 <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1038/s41566-023-01234-9'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
-                <span class="__dimensions_badge_embed__" data-doi="10.1038/s41566-023-01234-9" data-style="small_rectangle"></span>
-            </div>
         </div>
-        <hr style="border-color:#000000;">
+        
         <h3>
             <font color="#000000">2021</font>
         </h3>
         <hr>
-        <div class="row">
+        <div class="row content-hover-card" id="Sparse">
             <div class="col-md-3 mb-4">
                 <a href="https://www.nature.com/nbt/volumes/40/issues/4">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="https://media.springernature.com/w440/springer-static/cover-hires/journal/41587/40/4" alt="">
                 </a>
             </div>
-            <div class="col-md-7 mb-4">
+            <div class="col-md-8 mb-4">
                 <h5>Sparse deconvolution improves the resolution of live-cell super-resolution fluorescence microscopy</h5>
+                <nav class="project-context-nav" aria-label="Sparse deconvolution project links"><a href="projects.html#SparseDecon">Overview</a><a class="active" href="#Sparse" aria-current="page">Paper</a><a href="resources.html#Sparse-deconvolution">Code</a><a href="gallery.html#Sparse">Gallery</a></nav>
                 <hr>
                 <b>Authors</b>: <b>Weisong Zhao</b>#, Shiqun Zhao#, Liuju Li#, Xiaoshuai Huang, Shijia Xing, Yulin Zhang, Guohua Qiu, Zhenqian Han, Yingxu Shang, De-en Sun, Chunyan Shan, Runlong Wu, Shuwen Zhang, Riwang Chen, Jian Xiao, Yanquan Mo, Jianyong Wang, Wei Ji, Xing Chen, Baoquan Ding, Yanmei Liu, Heng Mao, Bao-Liang Song, Jiubin Tan, Jian Liu, Haoyu Li<b>*</b>, and Liangyi Chen<b>*</b>.
                 <br>
                 <b>Journal</b>: Nature Biotechnology<br>
                 <b>Keywords</b>: Fluorescence microscopy; Super-resolution; Deconvolution; Sparse deconvolution.
                 <hr>
-                <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="open-source.html#Sparse-deconvolution">Code
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="gallery.html#SparseSIM">Gallery
+                <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper link
                     <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <hr>
-                <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1038/s41587-021-01092-2'></div>
             </div>
-            <div class="col-md-0.5 mb-4">
+            <div class="col-md-1 mb-4 publication-metrics">
                 <span class="__dimensions_badge_embed__" data-doi="10.1038/s41587-021-01092-2" data-style="small_rectangle"></span>
+                <div data-badge-type='donut' class='altmetric-embed' data-badge-popover='right' data-doi='https://doi.org/10.1038/s41587-021-01092-2'></div>
             </div>
         </div>
         <hr>

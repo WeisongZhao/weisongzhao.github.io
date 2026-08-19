@@ -5,4 +5,13 @@ Disallow: /dist/
 Disallow: /src/
 Disallow: /tasks/
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
 Sitemap: https://weisongzhao.github.io/sitemap.xml

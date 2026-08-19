@@ -47,8 +47,8 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="open-source.html">Resources</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item language-switcher" role="group" aria-label="Language">
@@ -80,7 +80,10 @@
 		<i>All rights reserved – please contact <a href="contact.html">Weisong Zhao</a> if you want to use these images.</i>
   </div>
   <hr>
-  <h3 id="RIED"><font color="#000000">RIED</font></h3>
+  <h3 id="RIED" class="gallery-project-title">RIED</h3>
+  <nav class="project-context-nav" aria-label="RIED project links">
+    <a href="projects.html#RIED">Overview</a><a href="publications.html#RIED">Paper</a><a href="resources.html#RIED">Code</a><a class="active" href="#RIED" aria-current="page">Gallery</a>
+  </nav>
   <div class="row">
     <div class="col-md-8">
       <img class="img-fluid rounded mb-3 mb-md-0" src="img/projects/RIEDfig1.png" alt="RIED super-resolution imaging">
@@ -89,20 +92,137 @@
       <br>
       <b>System</b>:<br> Reaction-luminescence super-resolution imaging.
       <br>
-      <b>Objective</b>:<br> Oil-immersion 100× objective (numerical aperture (NA) = 1.45, Olympus).
-      <br>
       <b>Camera</b>:<br> EMCCD camera (iXon Ultra 897, Andor).
       <br>
-      <b>Description</b>:<br> RIED enables super-resolution imaging under extremely photon-limited electrochemiluminescence and bioluminescence conditions.
-      <br><br>
-      <a class="btn btn-primary" href="https://www.nature.com/articles/s41586-026-10889-7">Paper
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
+      <b>Description</b>:<br> RIED combines entropy-weighted correlation with deconvolution to reconstruct super-resolution ECL, CL, and BL images at approximately 100 nm resolution, without external light excitation.
+      </div>
+  </div>
+  <h4 id="RIEDECL" class="gallery-comparison-heading"><span>RIED / ECL</span><small>Conventional ECL ↔ RIED reconstruction</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="img/gallery/RIED-ECL.png" alt="RIED electrochemiluminescence reconstruction">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="img/gallery/ECL.png" alt="Conventional electrochemiluminescence image">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
     </div>
+    <div class="col-md-5">
+      <br>
+      <b>System</b>:<br> Electrochemiluminescence super-resolution imaging (ECL-RIED).
+      <br><b>Objective</b>:<br> Oil-immersion 100× objective (NA = 1.45, Olympus).
+      <br><b>Camera</b>:<br> EMCCD camera (iXon Ultra 897, Andor).
+      <br><b>Sample</b>:<br> Microtubules in a HeLa cell.
+      <br><b>Label</b>:<br> α-tubulin immunostaining with Ru(bpy)<sub>3</sub><sup>2+</sup>-conjugated antibodies.
+      <br><b>Description</b>:<br> Left: conventional ECL; Right: ECL-RIED, reaching 97 nm resolution.
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / CL</span><small>Conventional CL ↔ RIED reconstruction</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="img/gallery/RIED-CL.png" alt="RIED chemiluminescence reconstruction">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="img/gallery/CL.png" alt="Conventional chemiluminescence image">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>System</b>:<br> Chemiluminescence super-resolution imaging (CL-RIED).
+      <br><b>Objective</b>:<br> Oil-immersion 100× objective (NA = 1.45, Olympus).
+      <br><b>Camera</b>:<br> EMCCD camera (iXon Ultra 897, Andor).
+      <br><b>Sample</b>:<br> Mitochondria in fixed COS-7 cells.
+      <br><b>Label</b>:<br> Mitochondria-targeted GeNL (NanoLuc–mNeonGreen BRET probe).
+      <br><b>Description</b>:<br> Left: conventional CL; Right: CL-RIED, achieving 102 nm lateral and 221 nm axial resolution for three-dimensional mitochondrial mapping.
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / BL</span><small>Conventional BL ↔ RIED reconstruction</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="img/gallery/RIED-BL.png" alt="RIED bioluminescence reconstruction">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="img/gallery/BL.png" alt="Conventional bioluminescence image">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>System</b>:<br> Bioluminescence super-resolution imaging (BL-RIED).
+      <br><b>Objective</b>:<br> Oil-immersion objectives (100×/1.42 NA or 60×/1.49 NA, Nikon).
+      <br><b>Camera</b>:<br> EMCCD camera (iXon Ultra 897, Andor).
+      <br><b>Sample</b>:<br> Mitochondrial outer membranes in live COS-7 cells.
+      <br><b>Label</b>:<br> Mitochondrial-outer-membrane-targeted GeNL (NanoLuc–mNeonGreen BRET probe).
+      <br><b>Description</b>:<br> Left: conventional BL; Right: BL-RIED. It reaches 117 nm resolution and supports continuous live-cell imaging for 41 h.
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / 2D ECL</span><small>Conventional 2D ECL ↔ RIED reconstruction</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="img/gallery/2D RIED-ECL.png" alt="Two-dimensional RIED-ECL reconstruction">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="img/gallery/2dECL.png" alt="Conventional two-dimensional ECL image">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>System</b>:<br> Two-dimensional ECL-RIED.
+      <br><b>Objective</b>:<br> Oil-immersion 100× objective (NA = 1.45, Olympus).
+      <br><b>Camera</b>:<br> EMCCD camera (iXon Ultra 897, Andor).
+      <br><b>Sample</b>:<br> Microtubules in a HeLa cell.
+      <br><b>Label</b>:<br> α-tubulin immunostaining with Ru(bpy)<sub>3</sub><sup>2+</sup>-conjugated antibodies.
+      <br><b>Description</b>:<br> Left: conventional 2D ECL; Right: 2D ECL-RIED with substantially improved structural detail.
+      </div>
+  </div><hr>
+
+  <h4 class="gallery-comparison-heading"><span>RIED / 3D ECL</span><small>Conventional 3D ECL ↔ RIED reconstruction</small></h4><hr>
+  <div class="row">
+    <div class="col-md-7">
+      <figure class="cd-image-container">
+        <img src="img/gallery/3D RIED-ECL.png" alt="Three-dimensional RIED-ECL reconstruction">
+        <span class="cd-image-label" data-type="original"></span>
+        <div class="cd-resize-img">
+          <img src="img/gallery/3D-ECL.png" alt="Conventional three-dimensional ECL image">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class="col-md-5">
+      <br>
+      <b>System</b>:<br> Three-dimensional ECL-RIED.
+      <br><b>Objective</b>:<br> Oil-immersion 100× objective (NA = 1.45, Olympus).
+      <br><b>Camera</b>:<br> EMCCD camera (iXon Ultra 897, Andor).
+      <br><b>Sample</b>:<br> Microtubules in a HeLa cell.
+      <br><b>Label</b>:<br> α-tubulin immunostaining with Ru(bpy)<sub>3</sub><sup>2+</sup>-conjugated antibodies.
+      <br><b>Color code</b>:<br> Color represents axial depth, distinguishing structures at different z positions.
+      <br><b>Description</b>:<br> Left: conventional 3D ECL; Right: 3D ECL-RIED, resolving approximately 116 nm laterally and 235 nm axially.
+      </div>
   </div>
   <hr>
-  <h3 id="SN2N" ><font color="#000000">SN2N</font></h3>
-    <h4 id="SN2NSDSIM" align="right"><font color="#000000">SD-SIM</font></h4><hr>
+  <h3 id="SN2N" class="gallery-project-title">SN2N</h3>
+  <nav class="project-context-nav" aria-label="SN2N project links">
+    <a href="projects.html#SN2N">Overview</a><a href="publications.html#SN2N">Paper</a><a href="resources.html#SN2N">Code</a><a class="active" href="#SN2N" aria-current="page">Gallery</a>
+  </nav>
+    <h4 id="SN2NSDSIM" class="gallery-comparison-heading"><span>SN2N / SD-SIM</span><small>Noisy acquisition ↔ SN2N denoising</small></h4><hr>
     <div class="row">
       <div class="col-md-10">
          <img src="img/gallery/SN2Ngallery.gif" alt="SN2N microscopy denoising comparison">
@@ -118,11 +238,7 @@
         <b>Cell line</b>:<br> COS-7 cell.
         <br>
         <b>Description</b>:<br> RL-SN2N on SD-SIM.
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -140,11 +256,7 @@
         <b>Cell line</b>:<br> COS-7 cell.
         <br>
         <b>Description</b>:<br> 3D RL-SN2N on SD-SIM.
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -162,11 +274,7 @@
         <b>Cell line</b>:<br> COS-7 cell.
         <br>
         <b>Description</b>:<br> 3D RL-SN2N on SD-SIM.
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -184,11 +292,7 @@
         <b>Cell line</b>:<br> COS-7 cell.
         <br>
         <b>Description</b>:<br> 3D RL-SN2N on SD-SIM.
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -206,14 +310,10 @@
         <b>Cell line</b>:<br> COS-7 cell.
         <br>
         <b>Description</b>:<br> RL-SN2N on SD-SIM.
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 id="SN2NSTED" align="right"><font color="#000000">STED</font></h4><hr>
+    <h4 id="SN2NSTED" class="gallery-comparison-heading"><span>SN2N / STED</span><small>Noisy acquisition ↔ SN2N denoising</small></h4><hr>
     <div class="row">
       <div class="col-md-10">
          <img src="img/gallery/STEDSN2N.gif" alt="SN2N denoising of STED microscopy">
@@ -226,14 +326,10 @@
         <b>Cell line</b>:<br> COS-7 cell.
         <br>
         <b>Description</b>:<br> SN2N on STED.
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 id="SN2NGISIM" align="right"><font color="#000000">GI-SIM</font></h4><hr>
+    <h4 id="SN2NGISIM" class="gallery-comparison-heading"><span>SN2N / GI-SIM</span><small>Noisy acquisition ↔ SN2N denoising</small></h4><hr>
     <div class="row">
       <div class="col-md-10">
          <img src="img/gallery/GISIM-SN2N.gif" alt="SN2N denoising of GI-SIM microscopy">
@@ -243,14 +339,10 @@
         <b>System</b>:<br> GI-SIM.
         <br>
         <b>Description</b>:<br> SN2N on SIM (<a href="https://figshare.com/articles/dataset/BioSR/13264793">BioSR</a> dataset).
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 id="SN2NSIM" align="right"><font color="#000000">2D-SIM</font></h4><hr>
+    <h4 id="SN2NSIM" class="gallery-comparison-heading"><span>SN2N / 2D-SIM</span><small>Noisy acquisition ↔ SN2N denoising</small></h4><hr>
     <div class="row">
       <div class="col-md-7">
          <img src="img/gallery/2DSIM-SN2N.gif" alt="SN2N denoising of 2D-SIM microscopy">
@@ -265,16 +357,15 @@
         <b>Camera</b>:<br> sCMOS camera (C14440-20UP, Hamamatsu, Japan).
         <br>
         <b>Description</b>:<br> SN2N on SIM.
-        <br><br>
-        <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-024-02400-9">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
 
-    <h3 id="Sparse"><font color="#000000">Sparse deconvolution-assisted microscopy</font></h3>
-    <h4 id="SparseSDSIM" align="right"><font color="#000000">SD-SIM</font></h4><hr>
+    <h3 id="Sparse" class="gallery-project-title">Sparse deconvolution-assisted microscopy</h3>
+    <nav class="project-context-nav" aria-label="Sparse deconvolution project links">
+      <a href="projects.html#SparseDecon">Overview</a><a href="publications.html#Sparse">Paper</a><a href="resources.html#Sparse-deconvolution">Code</a><a class="active" href="#Sparse" aria-current="page">Gallery</a>
+    </nav>
+    <h4 id="SparseSDSIM" class="gallery-comparison-heading"><span>Sparse deconvolution / SD-SIM</span><small>Raw acquisition ↔ Sparse reconstruction</small></h4><hr>
     <div class="row">
       <div class="col-md-7">
         <figure class="cd-image-container">
@@ -304,11 +395,7 @@
         &emsp;&emsp;Tubulin-EGFP.
         <br>
         <b>Description</b>:<br> Left: raw SD-SIM; Right: Sparse SD-SIM.
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -327,14 +414,10 @@
         <br>
         <b>Label</b>:<br>
         &emsp;&emsp;Tom20-mCherry;<br>
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
-    <h4 align="right"><font color="#000000">Expansion 4.5-fold</font></h4><hr>
+    <h4 class="gallery-comparison-heading"><span>Sparse deconvolution / 4.5× expansion microscopy</span><small>Raw expansion ↔ Sparse reconstruction</small></h4><hr>
     <div class="row">
       <div class="col-md-7">
         <figure class="cd-image-container">
@@ -361,13 +444,7 @@
         &emsp;&emsp;Sec61β-GFP.
         <br>
         <b>Description</b>:<br> Left: raw expansion; Right: Sparse expansion.
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a> <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-020-01005-2/">System paper
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+        </div>
     </div>
     <hr>
     <div class="row">
@@ -396,15 +473,10 @@
         &emsp;&emsp;α-tubulin immunostaining.
         <br>
         <b>Description</b>:<br> Left: raw expansion; Right: Sparse expansion.
-        <br><br>
-        <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-          <span class="glyphicon glyphicon-chevron-right"></span></a> <a class="btn btn-primary" href="https://www.nature.com/articles/s41592-020-01005-2/">System paper
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
         </div>
       </div>
       <hr>
-      <h4 id="SparseSIM" align="right"><font color="#000000">2D-SIM</font></h4>
+      <h4 id="SparseSIM" class="gallery-comparison-heading"><span>Sparse deconvolution / 2D-SIM</span><small>Raw SIM ↔ Sparse reconstruction</small></h4>
       <hr>
 
 <!--       <div class="row">
@@ -412,12 +484,7 @@
           <video src="https://static-content.springer.com/esm/art%3A10.1038%250"></video>
         </div>
         <div class="col-md-5">
-        Ring-shaped Nup98 pores resolved by Sparse-SIM 2×. Nuclear pores labeled with Nup98–GFP in a live COS-7 cell with 4-s intervals imaged by 2D-SIM, 2D-SIM followed by RL deconvolution and Sparse-SIM 2× (cf., Fig. 2c) demonstrate that only Sparse-SIM 2× can resolve the ring-shaped Nup98.<br><br>
-          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-            <span class="glyphicon glyphicon-chevron-right"></span></a> <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">System paper
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div>
+        Ring-shaped Nup98 pores resolved by Sparse-SIM 2×. Nuclear pores labeled with Nup98–GFP in a live COS-7 cell with 4-s intervals imaged by 2D-SIM, 2D-SIM followed by RL deconvolution and Sparse-SIM 2× (cf., Fig. 2c) demonstrate that only Sparse-SIM 2× can resolve the ring-shaped Nup98.</div>
         </div>
       <hr> -->
 
@@ -447,11 +514,6 @@
           &emsp;&emsp;LAMP1-EGFP.
           <br>
           <b>Description</b>:<br> Left: raw 2D-SIM; Right: Sparse 2D-SIM.
-          <br><br>
-          <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-            <span class="glyphicon glyphicon-chevron-right"></span></a> <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">System paper
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
           </div>
         </div>
         <hr>
@@ -481,12 +543,6 @@
             &emsp;&emsp;LipidSpot 488.
             <br>
             <b>Description</b>:<br> Left: raw 2D-SIM; Right: Sparse 2D-SIM.
-            <br><br>
-            <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-              <span class="glyphicon glyphicon-chevron-right"></span></a>
-              <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">System paper
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
             </div>
           </div>
           <hr>
@@ -516,16 +572,10 @@
               &emsp;&emsp;LysoView 488.
               <br>
               <b>Description</b>:<br> Left: raw 2D-SIM; Right: Sparse 2D-SIM.
-              <br><br>
-              <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-                <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">System paper
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
               </div>
             </div>
             <hr>
-            <h4  id = "SparseTSIM" align="right"><font color="#000000">TIRF-SIM</font></h4>
+            <h4 id="SparseTSIM" class="gallery-comparison-heading"><span>Sparse deconvolution / TIRF-SIM</span><small>Raw SIM ↔ Sparse reconstruction</small></h4>
             <hr>
             <div class="row">
               <div class="col-md-7">
@@ -553,16 +603,10 @@
                 &emsp;&emsp;Cy5, two sites fluorescently labeled.
                 <br>
                 <b>Description</b>:<br> Left: raw 2D-SIM; Right: Sparse 2D-SIM.
-                <br><br>
-                <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-                  <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  <a class="btn btn-primary" href="https://www.nature.com/articles/nbt.4115/">System paper
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
                 </div>
               </div>
               <hr>
-            <h4 id="SparseSTED" align="right"><font color="#000000">Gated STED</font></h4><hr>
+            <h4 id="SparseSTED" class="gallery-comparison-heading"><span>Sparse deconvolution / gated STED</span><small>Raw STED ↔ Sparse reconstruction</small></h4><hr>
               <div class="row">
                 <div class="col-md-6">
                   <figure class="cd-image-container">
@@ -588,11 +632,7 @@
                   &emsp;&emsp;anti-Tubulin;
                   <br>
                   <b>Description</b>:<br> Left: raw STED; Right: Sparse STED.
-                  <br><br>
-                  <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
+                  </div>
               </div>
               <hr>
               <div class="row">
@@ -619,14 +659,10 @@
                   &emsp;&emsp;anti-Mab414;
                   <br>
                   <b>Description</b>:<br> Left: raw STED; Right: Sparse STED.
-                  <br><br>
-                  <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
+                  </div>
               </div>
               <hr>
-              <h4 align="right"><font color="#000000">MTPM</font></h4><hr>
+              <h4 class="gallery-comparison-heading"><span>Sparse deconvolution / MTPM</span><small>Raw multiphoton image ↔ Sparse reconstruction</small></h4><hr>
               <div class="row">
                 <div class="col-md-6">
                   <figure class="cd-image-container">
@@ -651,16 +687,10 @@
                   &emsp;&emsp;Thy1-GFP
                   <br>
                   <b>Description</b>:<br> Left: raw MTPM; Right: Sparse MTPM.<br> Color-coded 3D volume (50~160 μm).
-                  <br><br>
-                  <a class="btn btn-primary" href="https://doi.org/10.1038/s41587-021-01092-2">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span></a>
-                    <a class="btn btn-primary" href="https://www.nature.com/articles/nmeth.4305/">System paper
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
                   </div>
                 </div>
                 <hr>
-                <h3 id="sposi"><font color="#000000">SPoSI</font></h3>
+                <h3 id="sposi" class="gallery-project-title">SPoSI</h3>
 
                 <div class="row">
                   <div class="col-md-6">
@@ -683,14 +713,13 @@
                     <b>Sample</b>:<br>Gold nanorod (20 nm x 300 nm).
                     <br>
                     <b>Description</b>:<br> Left: raw wide-field (552 nm laser); Right: SPoSI.
-                    <br><br>
-                    <a class="btn btn-primary" href="404.html">Paper
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div><hr>
 
-                <h3 id="endoscope"><font color="#000000">Endoscope</font></h3>
+                <h3 id="endoscope" class="gallery-project-title">Endoscope</h3>
+                <nav class="project-context-nav" aria-label="Endoscope project links">
+                  <a href="projects.html#endoscope">Overview</a><a href="publications.html#endoscope">Paper</a><a class="active" href="#endoscope" aria-current="page">Gallery</a>
+                </nav>
                 <div class="row">
                   <div class="col-md-6">
                     <figure class="cd-image-container">
@@ -712,14 +741,13 @@
                     <b>Sample</b>:<br>USAF target and live worm.
                     <br>
                     <b>Description</b>:<br> Left: 3D live worm; Right: tilted USAF target.
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.1364/OL.506261">Paper
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div><hr>
 
-                  <h3 id="SOHA"><font color="#000000">Smart palm-size optofluidic hematology analyzer</font></h3>
+                  <h3 id="SOHA" class="gallery-project-title">Smart palm-size optofluidic hematology analyzer</h3>
+                  <nav class="project-context-nav" aria-label="Hematology analyzer project links">
+                    <a href="projects.html#SOHA">Overview</a><a href="publications.html#SOHA">Paper</a><a class="active" href="#SOHA" aria-current="page">Gallery</a>
+                  </nav>
                 <div class="row">
                   <div class="col-md-6">
                     <img src="img/gallery/OES_GIF.gif" alt="Smart palm-size optofluidic hematology analyzer">
@@ -733,14 +761,14 @@
                     <b>Sample</b>:<br>Leukocyte.
                     <br>
                     <b>Description</b>:<br> Tracking of the leukocytes.
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.29026/oes.2023.230018">Paper
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div><hr>
 
-                <h3 id="SACD"><font color="#000000">SACD</font></h3>
+                <h3 id="SACD" class="gallery-project-title">SACD</h3>
+                <nav class="project-context-nav" aria-label="SACD project links">
+                  <a href="projects.html#SACD">Overview</a><a href="publications.html#SACD">Paper</a><a href="resources.html#SACD">Code</a><a class="active" href="#SACD" aria-current="page">Gallery</a>
+                </nav>
+                <h4 class="gallery-comparison-heading"><span>SACD / spinning-disk confocal</span><small>Confocal reconstruction ↔ SACD</small></h4>
                 <div class="row">
                   <div class="col-md-9">
                     <figure class="cd-image-container">
@@ -768,11 +796,7 @@
                     <br>
                     <b>Description</b>:<br> Left: confocal; Right: SACD.
                     <br>Huge FOV 3D volume (10μm in depth);<br> 20 frame per SACD reconstruction.
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.12.520072">Link to the pre-print
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
@@ -792,13 +816,13 @@
                     <b>Label</b>:<br>
                     &emsp;&emsp;Qdots 525.
                     <br> 20 frame per SACD reconstruction.
-                    <br><br>
-                    <a class="btn btn-primary" href="https://doi.org/10.1101/2022.12.12.520072">Link to the pre-print
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
-            <hr><h3 id="PANEL"><font color="#000000">PANEL</font></h3>
+            <hr><h3 id="PANEL" class="gallery-project-title">PANEL</h3>
+                <nav class="project-context-nav" aria-label="PANEL project links">
+                  <a href="projects.html#PANEL">Overview</a><a href="publications.html#PANEL">Paper</a><a href="resources.html#PANEL">Code</a><a class="active" href="#PANEL" aria-current="page">Gallery</a>
+                </nav>
+                <h4 class="gallery-comparison-heading"><span>PANEL / STORM</span><small>STORM reconstruction ↔ local resolution map</small></h4>
                 <div class="row">
                   <div class="col-md-8">
                     <figure class="cd-image-container">
@@ -823,11 +847,7 @@
                     <b>Label</b>:<br>α-tubulin labeled with Alexa Fluor 647.
                     <br>
                     <b>Description</b>:<br> Left: STORM; Right: rFRC resolution map.
-                    <br><br>
-                    <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-023-01321-0">Paper
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
@@ -847,13 +867,9 @@
                     <b>Label</b>:<br>α-tubulin labeled with Alexa Fluor 647.
                     <br>
                     <b>Description</b>:<br> Left: STORM; Right: rFRC resolution map.
-                    <br><br>
-                    <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-023-01321-0">Paper
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
+                    </div>
                 </div>
-                <hr><h3 id="MGAN-SIM"><font color="#000000">MGAN-SIM</font></h3>
+                <hr><h3 id="MGAN-SIM" class="gallery-project-title">MGAN-SIM</h3>
 
                 <div class="row">
                   <div class="col-md-9">
@@ -881,10 +897,7 @@
                     &emsp;&emsp;MitoTracker Green.
                     <br>
                     <b>Description</b>:<br> Left: wide-field; Right: MGAN-SIM.
-                    <br><br>
-                    <a class="btn btn-primary" href="404.html">Paper
-                      <span class="glyphicon glyphicon-chevron-right"></span></a>
-                  </div>
+                    </div>
                 </div>
                 <hr>
 
@@ -917,15 +930,12 @@
                       <br>
                       <b>Description</b>:<br> Left: TIRF; Right: MGAN-SIM.<br>
                       Long-term 1h imaging, 3400 frames. <br><br>
-                      <a class="btn btn-primary" href="404.html">Paper
-                      <span class="glyphicon glyphicon-chevron-right"></span></a>
-<!--                     <div class="card-footer">
-                      <p align="center"><a href="404.html"  class="btn btn-primary">Paper</a></p>
-                    </div>    -->
+                      
+<!--                         -->
                 </div>
               </div>
 
-              <hr><h3><font color="#000000">ODT</font></h3>
+              <hr><h3 id="ODT" class="gallery-project-title">ODT</h3>
               <div class="row">
                 <div class="col-md-6">
                   <img src="img/gallery/ODT1.gif" alt="ODT">
@@ -941,13 +951,9 @@
                   <b>Cell line</b>:<br> COS-7 cell.
                   <br>
                   <b>Description</b>:<br> The process of cell division in hours.<br> 0~10 μm and the plane at 7 μm is visualized on the left. <br><b>From Prof. Liangyi Chen.</b>
-                  <br><br>
-                  <a class="btn btn-primary" href="https://www.nature.com/articles/s41377-020-0249-4/">Paper
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                </div>
+                  </div>
               </div>
-              <hr><h3><font color="#000000">SIM-assisted ODT</font></h3>
+              <hr><h3 id="SIM-assisted-ODT" class="gallery-project-title">SIM-assisted ODT</h3>
 
               <div class="row">
                 <div class="col-md-6">
@@ -984,14 +990,12 @@
                     <br>
                     <b>Description</b>:<br> Left panel: ODT (left) at 5μm plane (0~6μm in total); 2D-SIM (right).<br>Right panel: 2D-SIM (red) + ODT (gray). <br><b>From Prof. Liangyi Chen.</b>
                   </p>
-                  <div class="card-footer">
-                    <p align="center"><a href="https://www.nature.com/articles/s41377-020-0249-4/" class="btn btn-primary">Paper</a></p>
-                  </div>
+                  
                 </div>
               </div>
 
 
-              <hr><h3 id="MLFM"><font color="#000000">Miniaturized light-field microscopy</font></h3>
+              <hr><h3 id="MLFM" class="gallery-project-title">Miniaturized light-field microscopy</h3>
 
               <div class="row">
                 <div class="col-md-7">
@@ -1020,7 +1024,7 @@
                     <b>Description</b>: From <b>Changliang Guo.</b>
                   </p>
                   <div>
-                    <p align="center"><a href="https://doi.org/10.1101/2021.11.21.469394"  class="btn btn-primary">Paper</a></p>
+                    
                   </div>
                 </div>
               </div>
