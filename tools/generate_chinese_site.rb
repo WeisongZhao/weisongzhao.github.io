@@ -243,7 +243,7 @@ end
 def translate_common(text)
   replacements = {
     "<title>Zhao's Lab</title>" => "<title>赵唯淞课题组</title>",
-    ">Home<" => ">首页<", ">Team<" => ">团队<", ">Projects<" => ">项目<", ">Research<" => ">项目<",
+    ">Home<" => ">首页<", ">Team<" => ">团队<", ">Projects<" => ">项目<", ">Research<" => ">研究<",
     ">Open-source<" => ">开源<", ">Resources<" => ">开源<", ">Publications<" => ">论文<", ">Gallery<" => ">画廊<",
     ">Contact<" => ">联系<", ">Paper\n" => ">论文\n", ">Code\n" => ">代码\n",
     ">Preprint\n" => ">预印本\n", ">Software\n" => ">软件\n", ">Instrument\n" => ">仪器\n",
@@ -265,7 +265,7 @@ def translate_common(text)
   }
   replacements.each { |from, to| text.gsub!(from, to) }
   {
-    "Home" => "首页", "Team" => "团队", "Projects" => "项目", "Research" => "项目",
+    "Home" => "首页", "Team" => "团队", "Projects" => "项目", "Research" => "研究",
     "Open-source" => "开源", "Resources" => "开源", "Publications" => "论文", "Gallery" => "画廊",
     "Contact" => "联系", "Paper" => "论文", "Code" => "代码",
     "Preprint" => "预印本", "Software" => "软件", "Instrument" => "仪器"
@@ -399,7 +399,11 @@ def translate_home(text)
           <span class="news-social-card-media news-social-card-media--contain"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41566-023-01275-0/MediaObjects/41566_2023_1275_Fig1_HTML.png" alt="解卷积增强涨落检测论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
           <span class="news-social-card-body"><span class="news-social-card-meta">Nature Photonics · 新闻与观点</span><strong>解卷积增强涨落检测</strong><span>David Baddeley博士撰写的新闻与观点文章，评述我们的SACD工作及其两步解卷积流程。</span><span class="news-social-card-link">阅读文章 ↗</span></span>
         </a>
-        <b style="color:#dc3545;">2023-09：</b> <i>SACD</i>入选<a href="https://www.nature.com/nphoton/volumes/17/issues/9">Nature Photonics 2023年9月第17卷第9期</a>封面文章。<br><br>
+        <b style="color:#dc3545;">2023-09：</b> <i>SACD</i>入选<a href="https://www.nature.com/nphoton/volumes/17/issues/9">Nature Photonics 2023年9月第17卷第9期</a>封面文章。
+        <a class="news-social-card" href="https://www.nature.com/nphoton/volumes/17/issues/9" target="_blank" rel="noopener noreferrer" aria-label="查看以SACD为封面的Nature Photonics 2023年9月刊">
+          <span class="news-social-card-media news-social-card-media--cover"><img src="https://media.springernature.com/w440/springer-static/cover-hires/journal/41566/17/9" alt="以SACD为封面的Nature Photonics第17卷第9期封面" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
+          <span class="news-social-card-body"><span class="news-social-card-meta">Nature Photonics · 封面 · 2023年9月</span><strong>高效超分辨成像</strong><span>封面展示了通过自相关与两步解卷积获得的宽场超分辨图像。该方法仅需20帧即可将轴向和横向分辨率提高一倍，并在10分钟内以128 nm分辨率完成2 mm × 1.4 mm视野内数千个细胞的成像。</span><span class="news-social-card-link">查看本期内容 ↗</span></span>
+        </a>
         <b>2023-08：</b> 我们与Yaming Jiu课题组利用<i>稀疏解卷积</i>增强的共聚焦显微成像，揭示SARS-CoV-2调控并利用动态丝状伪足实现病毒入侵的过程；研究在线发表于<a href="https://doi.org/10.1016/j.scib.2023.08.031">Science Bulletin</a>。<br><br>
         <b>2023-06：</b> 在<a href="https://communities.springernature.com/posts/super-resolution-made-easier">Nature Research Community</a>发布关于<i>SACD</i>的“论文背后”博客。<br><br>
         <b>2023-06：</b> <i>SACD</i>已在<a href="https://doi.org/10.1038/s41566-023-01234-9">Nature Photonics</a>在线发表。
@@ -407,18 +411,26 @@ def translate_home(text)
           <span class="news-social-card-media"><img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41566-023-01234-9/MediaObjects/41566_2023_1234_Fig1_HTML.png" alt="SACD论文预览图" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='../img/projects/SACD.png';"></span>
           <span class="news-social-card-body"><span class="news-social-card-meta">X · 2023年6月15日</span><strong>SACD发表于Nature Photonics</strong><span>SACD将荧光波动检测灵敏度提升数个数量级，仅需20帧即可实现两倍以上的三维分辨率提升。</span><span class="news-social-card-link">在X查看原帖 ↗</span></span>
         </a>
-        <hr>
-        <b>2022-12：</b> <a href="https://www.biorxiv.org/content/10.1101/2022.12.01.518675v1">PANEL</a>和<a href="https://www.biorxiv.org/content/10.1101/2022.12.12.520072v1">SACD</a>以预印本形式发布。<br><br>
-        <b>2022-10：</b> <a href="https://github.com/WeisongZhao/PANELpy/">PANELpy</a>完全开源。<br><br>
-        <b>2022-07：</b> 以<i>助理教授</i>身份加入哈尔滨工业大学。<br><br>
-        <b>2022-05：</b> <a href="https://github.com/WeisongZhao/SACDm/">SACDm</a>和<a href="https://github.com/WeisongZhao/SACDj/">SACDj</a>完全开源。<hr>
-        <b>2021-11：</b> 带GPU加速的<i>稀疏解卷积</i>Python版本发布于<a href="https://github.com/WeisongZhao/sparse-deconv-py">GitHub</a>。<br><br>
-        <b>2021-11：</b> 在<a href="https://communities.springernature.com/posts/physical-resolution-might-be-meaningless-if-in-the-mathematical-space">Nature Research Community</a>发布关于<i>稀疏解卷积</i>的“论文背后”博客。<br><br>
-        <b style="color:#dc3545;">2021-11：</b> <i>稀疏解卷积</i>已在<a href="https://www.nature.com/articles/s41587-021-01092-2">Nature Biotechnology</a>在线发表。<br><br>
-        <b>2021-07：</b> <a href="https://github.com/WeisongZhao/PANELM/">PANELM</a>和<a href="https://github.com/WeisongZhao/PANELJ/">PANELJ</a>完全开源。<br><br>
-        <b>2021-07：</b> <i>稀疏解卷积</i>被<i>Nature Biotechnology</i>接收发表。<br><br>
-        <b>2021-03：</b> 关于<i>解卷积</i>的开放科学讨论发布于<a href="https://weisongzhao.github.io/rl_positivity_sim/">GitHub</a>和<a href="https://twitter.com/weisong_zhao/status/1370308101690118146">Twitter</a>。<br>
-        <hr>
+        <details class="news-archive">
+          <summary>2022</summary>
+          <div class="news-archive-content">
+            <b>2022-12：</b> <a href="https://www.biorxiv.org/content/10.1101/2022.12.01.518675v1">PANEL</a>和<a href="https://www.biorxiv.org/content/10.1101/2022.12.12.520072v1">SACD</a>以预印本形式发布。<br><br>
+            <b>2022-10：</b> <a href="https://github.com/WeisongZhao/PANELpy/">PANELpy</a>完全开源。<br><br>
+            <b>2022-07：</b> 以<i>助理教授</i>身份加入哈尔滨工业大学。<br><br>
+            <b>2022-05：</b> <a href="https://github.com/WeisongZhao/SACDm/">SACDm</a>和<a href="https://github.com/WeisongZhao/SACDj/">SACDj</a>完全开源。
+          </div>
+        </details>
+        <details class="news-archive">
+          <summary>2021</summary>
+          <div class="news-archive-content">
+            <b>2021-11：</b> 带GPU加速的<i>稀疏解卷积</i>Python版本发布于<a href="https://github.com/WeisongZhao/sparse-deconv-py">GitHub</a>。<br><br>
+            <b>2021-11：</b> 在<a href="https://communities.springernature.com/posts/physical-resolution-might-be-meaningless-if-in-the-mathematical-space">Nature Research Community</a>发布关于<i>稀疏解卷积</i>的“论文背后”博客。<br><br>
+            <b style="color:#dc3545;">2021-11：</b> <i>稀疏解卷积</i>已在<a href="https://www.nature.com/articles/s41587-021-01092-2">Nature Biotechnology</a>在线发表。<br><br>
+            <b>2021-07：</b> <a href="https://github.com/WeisongZhao/PANELM/">PANELM</a>和<a href="https://github.com/WeisongZhao/PANELJ/">PANELJ</a>完全开源。<br><br>
+            <b>2021-07：</b> <i>稀疏解卷积</i>被<i>Nature Biotechnology</i>接收发表。<br><br>
+            <b>2021-03：</b> 关于<i>解卷积</i>的开放科学讨论发布于<a href="https://weisongzhao.github.io/rl_positivity_sim/">GitHub</a>和<a href="https://twitter.com/weisong_zhao/status/1370308101690118146">Twitter</a>。
+          </div>
+        </details>
       </div>
     </div>
   HTML
@@ -669,7 +681,7 @@ PAGES.each do |page|
     english.gsub!(">Link to the paper", ">Paper")
   end
   english.gsub!(/>Open-source(\s*)</, ">Resources\\1<")
-  english.gsub!(/>Research(\s*)</, ">Projects\\1<")
+  english.gsub!(/>Research(\s*)</, ">Projects\\1<") unless page == "index.html"
   english.gsub!("Other Research", "Other projects")
   english.sub!(%r{<li class="nav-item language-switcher".*?</li>}m, english_switcher(page))
   canonical = page == "index.html" ? "#{SITE_URL}/" : "#{SITE_URL}/#{page}"
